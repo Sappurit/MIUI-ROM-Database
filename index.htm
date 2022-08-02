@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width" />
 <link rel="icon" type="image/png" href="icon.png" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" />
-<link rel="stylesheet" href="theme.blue.css">
+<link rel="stylesheet" href="theme.blue.min.css">
 <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="jquery.tablesorter.min.js"></script>
 <script type="text/javascript" src="jquery.tablesorter.widgets.min.js"></script>
@@ -15,44 +15,59 @@
 #text      { border: 0px solid blue; padding: 0px; margin-bottom: 20px; width: 1200px; font: normal 16px 'Roboto'; color: #000000; }
 #text a    { text-decoration: none; color: #000000; }
 #text li   { line-height: 1.4; }
-#content   { border: 0px solid blue; padding: 0px; width: 3500px; }
+#content   { border: 0px solid blue; padding: 0px; width: 3000px; }
 
 kbd        { border: 1px solid #000; padding: 1px 2px; border-radius: 3px; }
 
-#myTable                                                 {  }
+#myTable                                                 { width: fit-content; }
 #myTable a                                               { text-decoration: none; color: #000000; }
 #myTable tr:first-child th                               { text-align: center; background-color: #79AFE5; }
 #myTable th                                              { padding: 5px; font: bold   12px 'Roboto'; color: #000000; }
 #myTable td                                              { padding: 5px; font: normal 12px 'Roboto'; color: #000000; word-break: break-all; }
-#myTable th:nth-of-type(1),  #myTable td:nth-of-type(1)  { width:  28px; } #myTable td:nth-of-type(1)  { text-align: left;   }
-#myTable th:nth-of-type(2),  #myTable td:nth-of-type(2)  { width:  70px; } #myTable td:nth-of-type(2)  { text-align: left;   }
-#myTable th:nth-of-type(3),  #myTable td:nth-of-type(3)  { width:  70px; } #myTable td:nth-of-type(3)  { text-align: left;   }
-#myTable th:nth-of-type(4),  #myTable td:nth-of-type(4)  { width:  70px; } #myTable td:nth-of-type(4)  { text-align: left;   }
-#myTable th:nth-of-type(5),  #myTable td:nth-of-type(5)  { width:  34px; } #myTable td:nth-of-type(5)  { text-align: left;   }
+#myTable th:nth-of-type(1),  #myTable td:nth-of-type(1)  { width:  28px; }
+#myTable th:nth-of-type(2),  #myTable td:nth-of-type(2)  { width: 138px; }
+#myTable th:nth-of-type(3),  #myTable td:nth-of-type(3)  { width: 138px; }
+#myTable th:nth-of-type(4),  #myTable td:nth-of-type(4)  { width:  34px; }
 
-#myTable th:nth-of-type(6),  #myTable td:nth-of-type(6)  { width:  62px; }
-#myTable th:nth-of-type(7),  #myTable td:nth-of-type(7)  { width:  18px; } #myTable td:nth-of-type(7)  { text-align: center; }
-#myTable th:nth-of-type(8),  #myTable td:nth-of-type(8)  { width: 120px; }
-#myTable th:nth-of-type(9),  #myTable td:nth-of-type(9)  { width:  24px; } #myTable td:nth-of-type(9)  { text-align: right;  }
-#myTable th:nth-of-type(10), #myTable td:nth-of-type(10) { width: 150px; }
+#myTable th:nth-of-type(5),  #myTable td:nth-of-type(5)  { width:  62px; }
+#myTable th:nth-of-type(6),  #myTable td:nth-of-type(6)  { width:  18px; } #myTable td:nth-of-type(6)  { text-align: center; }
+#myTable th:nth-of-type(7),  #myTable td:nth-of-type(7)  { width: 120px; }
+#myTable th:nth-of-type(8),  #myTable td:nth-of-type(8)  { width:  24px; } #myTable td:nth-of-type(8)  { text-align: right;  }
+#myTable th:nth-of-type(9),  #myTable td:nth-of-type(9)  { width: 150px; }
 
-#myTable th:nth-of-type(11), #myTable td:nth-of-type(11) { width:  62px; }
-#myTable th:nth-of-type(12), #myTable td:nth-of-type(12) { width:  18px; } #myTable td:nth-of-type(12) { text-align: center; }
-#myTable th:nth-of-type(13), #myTable td:nth-of-type(13) { width: 120px; }
-#myTable th:nth-of-type(14), #myTable td:nth-of-type(14) { width:  24px; } #myTable td:nth-of-type(14) { text-align: right;  }
-#myTable th:nth-of-type(15), #myTable td:nth-of-type(15) { width: 150px; }
+#myTable th:nth-of-type(10), #myTable td:nth-of-type(10) { width:  62px; }
+#myTable th:nth-of-type(11), #myTable td:nth-of-type(11) { width:  18px; } #myTable td:nth-of-type(11) { text-align: center; }
+#myTable th:nth-of-type(12), #myTable td:nth-of-type(12) { width: 120px; }
+#myTable th:nth-of-type(13), #myTable td:nth-of-type(13) { width:  24px; } #myTable td:nth-of-type(13) { text-align: right;  }
+#myTable th:nth-of-type(14), #myTable td:nth-of-type(14) { width: 150px; }
 
-#myTable th:nth-of-type(16), #myTable td:nth-of-type(16) { width:  62px; }
-#myTable th:nth-of-type(17), #myTable td:nth-of-type(17) { width:  18px; } #myTable td:nth-of-type(17) { text-align: center; }
-#myTable th:nth-of-type(18), #myTable td:nth-of-type(18) { width: 120px; }
-#myTable th:nth-of-type(19), #myTable td:nth-of-type(19) { width:  24px; } #myTable td:nth-of-type(19) { text-align: right;  }
-#myTable th:nth-of-type(20), #myTable td:nth-of-type(20) { width: 150px; }
+#myTable th:nth-of-type(15), #myTable td:nth-of-type(15) { width:  62px; }
+#myTable th:nth-of-type(16), #myTable td:nth-of-type(16) { width:  18px; } #myTable td:nth-of-type(16) { text-align: center; }
+#myTable th:nth-of-type(17), #myTable td:nth-of-type(17) { width: 120px; }
+#myTable th:nth-of-type(18), #myTable td:nth-of-type(18) { width:  24px; } #myTable td:nth-of-type(18) { text-align: right;  }
+#myTable th:nth-of-type(19), #myTable td:nth-of-type(19) { width: 150px; }
 
-#myTable th:nth-of-type(21), #myTable td:nth-of-type(21) { width:  62px; }
-#myTable th:nth-of-type(22), #myTable td:nth-of-type(22) { width:  18px; } #myTable td:nth-of-type(22) { text-align: center; }
-#myTable th:nth-of-type(23), #myTable td:nth-of-type(23) { width: 120px; }
-#myTable th:nth-of-type(24), #myTable td:nth-of-type(24) { width:  24px; } #myTable td:nth-of-type(24) { text-align: right;  }
-#myTable th:nth-of-type(25), #myTable td:nth-of-type(25) { width: 150px; }
+#myTable th:nth-of-type(20), #myTable td:nth-of-type(20) { width:  62px; }
+#myTable th:nth-of-type(21), #myTable td:nth-of-type(21) { width:  18px; } #myTable td:nth-of-type(21) { text-align: center; }
+#myTable th:nth-of-type(22), #myTable td:nth-of-type(22) { width: 120px; }
+#myTable th:nth-of-type(23), #myTable td:nth-of-type(23) { width:  24px; } #myTable td:nth-of-type(23) { text-align: right;  }
+#myTable th:nth-of-type(24), #myTable td:nth-of-type(24) { width: 150px; }
+
+table.tablesorter tbody tr.even td,
+table.tablesorter tbody tr.even:hover td
+{
+  background: #FFF;
+}
+
+
+table.tablesorter tbody tr.odd td,
+table.tablesorter tbody tr.odd:hover td
+{
+  background: #EBF2FA;
+}
+
+
+
 
 .poster_imdb { border: 0px solid red; width:  50px; height: 72px; display: block; object-fit: cover; }
 .poster_nf   { border: 0px solid red; width: 128px; height: 72px; display: block; }
@@ -134,13 +149,13 @@ function addChangeLog()
 <li> Date is taken from the Last-Modified header.</li>
 <li> Some devices have the wrong region.</li>
 </ul>
-Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking a column header.
+Tip: Sort multiple columns by holding down the <kbd>Ctrl</kbd> key and clicking a column header.
 </div>
 <div id="content">
 <table id="myTable" class="tablesorter">
 <thead>
 <tr>
-	<th colspan="5" class="sorter-false">Device Info</th>
+	<th colspan="4" class="sorter-false">Device Info</th>
 	<th colspan="5" class="sorter-false">Full Fastboot ROM</th>
 	<th colspan="5" class="sorter-false">Current Recovery ROM</th>
 	<th colspan="5" class="sorter-false">Latest Recovery ROM</th>
@@ -149,7 +164,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 <tr>
 	<th>ID</th>
 	<th>Model</th>
-	<th>Key</th>
 	<th>Codename</th>
 	<th>R</th>
 
@@ -180,9 +194,38 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 </thead>
 <tbody>
 	<tr>
+		<td>1119</td>
+		<td>Xiaomi Redmi Note 8</td>
+		<td>ginkgo_id_global</td>
+		<td>global</td>
+
+		<td>2022-04-29</td>
+		<td>F</td>
+		<td>V12.5.2.0.RCOIDXM</td>
+		<td>11.0</td>
+		<td><kbd>FULLROM</kbd> <a href="https://bigota.d.miui.com/V12.5.2.0.RCOIDXM/ginkgo_id_global_images_V12.5.2.0.RCOIDXM_20220412.0000.00_11.0_global_5668a7e163.tgz"><kbd class="tt" data-tt="ginkgo_id_global_images_V12.5.2.0.RCOIDXM_20220412.0000.00_11.0_global_5668a7e163.tgz">TGZ</kbd></a> <kbd class="tt" data-tt="5668a7e163e072c646dc04024304a380">MD5</kbd> <kbd>3.7G</kbd> </td>
+
+		<td>2022-04-19</td>
+		<td>F</td>
+		<td>V12.5.2.0.RCOIDXM</td>
+		<td>11.0</td>
+		<td><kbd>ROM</kbd> <a href="https://bigota.d.miui.com/V12.5.2.0.RCOIDXM/miui_GINKGOIDGlobal_V12.5.2.0.RCOIDXM_c728b0ba8c_11.0.zip"><kbd class="tt" data-tt="miui_GINKGOIDGlobal_V12.5.2.0.RCOIDXM_c728b0ba8c_11.0.zip">ZIP</kbd></a> <kbd class="tt" data-tt="c728b0ba8ce34db592f34814e4b5ae95">MD5</kbd> <kbd>2.4G</kbd> <kbd class="tt" data-js='{"System":{"txt":["Updated Android Security Patch to April 2022. Increased system security."]}}'>LOG</kbd></td>
+
+		<td>2022-07-29</td>
+		<td>F</td>
+		<td>V12.5.3.0.RCOIDXM</td>
+		<td>11.0</td>
+		<td><kbd>ROM</kbd> <a href="https://bigota.d.miui.com/V12.5.3.0.RCOIDXM/miui_GINKGOIDGlobal_V12.5.3.0.RCOIDXM_bf701a27dd_11.0.zip"><kbd class="tt" data-tt="miui_GINKGOIDGlobal_V12.5.3.0.RCOIDXM_bf701a27dd_11.0.zip">ZIP</kbd></a> <kbd class="tt" data-tt="bf701a27ddf26d4356ae831dd8b768f0">MD5</kbd> <kbd>2.4G</kbd> <kbd class="tt" data-js='{"System":{"txt":["Updated Android Security Patch to July 2022. Increased system security."]}}'>LOG</kbd></td>
+
+		<td>2022-07-29</td>
+		<td>F</td>
+		<td>V12.5.3.0.RCOIDXM</td>
+		<td>11.0</td>
+		<td><kbd>OTA</kbd> <a href="https://bigota.d.miui.com/V12.5.3.0.RCOIDXM/miui-blockota-ginkgo_id_global-V12.5.2.0.RCOIDXM-V12.5.3.0.RCOIDXM-99babd2a40-11.0.zip"><kbd class="tt" data-tt="miui-blockota-ginkgo_id_global-V12.5.2.0.RCOIDXM-V12.5.3.0.RCOIDXM-99babd2a40-11.0.zip">ZIP</kbd></a> <kbd class="tt" data-tt="99babd2a409f19c029cad126c3428994">MD5</kbd> <kbd>480M</kbd> <kbd class="tt" data-js='{"System":{"txt":["Updated Android Security Patch to July 2022. Increased system security."]}}'>LOG</kbd></td>
+	</tr>
+	<tr>
 		<td>1270</td>
 		<td>Xiaomi 11T Pro</td>
-		<td>vili_tr_global_global_F</td>
 		<td>vili_tr_global</td>
 		<td>global</td>
 
@@ -213,7 +256,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1199</td>
 		<td>POCO X3 Pro</td>
-		<td>vayu_eea_global_eea_F</td>
 		<td>vayu_eea_global</td>
 		<td>eea</td>
 
@@ -244,7 +286,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1264</td>
 		<td>Redmi 10</td>
-		<td>selene_global_global_F</td>
 		<td>selene_global</td>
 		<td>global</td>
 
@@ -275,7 +316,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1288</td>
 		<td>Xiaomi pad 5</td>
-		<td>nabu_eea_global_eea_F</td>
 		<td>nabu_eea_global</td>
 		<td>eea</td>
 
@@ -306,7 +346,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1288</td>
 		<td>Xiaomi pad 5</td>
-		<td>nabu_eea_global_eea_F</td>
 		<td>nabu_eea_global</td>
 		<td>eea</td>
 
@@ -337,7 +376,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1174</td>
 		<td>Redmi Note 9T</td>
-		<td>cannong_eea_global_eea_F</td>
 		<td>cannong_eea_global</td>
 		<td>eea</td>
 
@@ -368,7 +406,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1212</td>
 		<td>Xiaomi Mi 10T/Pro</td>
-		<td>apollo_tw_global_global_F</td>
 		<td>apollo_tw_global</td>
 		<td>global</td>
 
@@ -399,7 +436,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1321</td>
 		<td>Xiaomi 12 Pro</td>
-		<td>zeus_global_global_F</td>
 		<td>zeus_global</td>
 		<td>global</td>
 
@@ -430,7 +466,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1248</td>
 		<td>Xiaomi Redmi Note 9</td>
-		<td>merlin_tr_global_global_F</td>
 		<td>merlin_tr_global</td>
 		<td>global</td>
 
@@ -461,7 +496,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1277</td>
 		<td>Xiaomi 11 Lite 5G NE</td>
-		<td>lisa_global_global_F</td>
 		<td>lisa_global</td>
 		<td>global</td>
 
@@ -492,7 +526,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1358</td>
 		<td>Redmi 10 5G</td>
-		<td>light_global_global_F</td>
 		<td>light_global</td>
 		<td>global</td>
 
@@ -523,7 +556,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1125</td>
 		<td>Xiaomi Redmi 9 Prime</td>
-		<td>lancelot_in_global_in_F</td>
 		<td>lancelot_in_global</td>
 		<td>in</td>
 
@@ -554,7 +586,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1165</td>
 		<td>Xiaomi Mi 10T Lite</td>
-		<td>gauguin_global_global_F</td>
 		<td>gauguin_global</td>
 		<td>global</td>
 
@@ -585,7 +616,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1335</td>
 		<td>Redmi note 11S</td>
-		<td>fleur_tr_global_global_F</td>
 		<td>fleur_tr_global</td>
 		<td>global</td>
 
@@ -616,7 +646,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1334</td>
 		<td>POCO M4 Pro</td>
-		<td>fleur_tr_global_global_F</td>
 		<td>fleur_tr_global</td>
 		<td>global</td>
 
@@ -647,7 +676,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1333</td>
 		<td>POCO M4 Pro</td>
-		<td>fleur_id_global_global_F</td>
 		<td>fleur_id_global</td>
 		<td>global</td>
 
@@ -678,7 +706,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1325</td>
 		<td>Xiaomi 12</td>
-		<td>cupid_global_global_F</td>
 		<td>cupid_global</td>
 		<td>global</td>
 
@@ -709,7 +736,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1161</td>
 		<td>Xiaomi Mi 10T/Pro</td>
-		<td>apollo_ru_global_global_F</td>
 		<td>apollo_ru_global</td>
 		<td>global</td>
 
@@ -740,7 +766,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1146</td>
 		<td>Xiaomi Redmi 9C</td>
-		<td>angelica_eea_global_eea_F</td>
 		<td>angelica_eea_global</td>
 		<td>eea</td>
 
@@ -771,7 +796,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1216</td>
 		<td>POCO F3</td>
-		<td>alioth_tw_global_global_F</td>
 		<td>alioth_tw_global</td>
 		<td>global</td>
 
@@ -802,7 +826,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1242</td>
 		<td>POCO F3</td>
-		<td>alioth_tr_global_global_F</td>
 		<td>alioth_tr_global</td>
 		<td>global</td>
 
@@ -833,7 +856,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1358</td>
 		<td>Redmi 10 5G</td>
-		<td>light_global_global_F</td>
 		<td>light_global</td>
 		<td>global</td>
 
@@ -864,7 +886,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1325</td>
 		<td>Xiaomi 12</td>
-		<td>cupid_global_global_F</td>
 		<td>cupid_global</td>
 		<td>global</td>
 
@@ -895,7 +916,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1279</td>
 		<td>Xiaomi 11 Lite 5G NE</td>
-		<td>lisa_ru_global_global_F</td>
 		<td>lisa_ru_global</td>
 		<td>global</td>
 
@@ -926,7 +946,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1085</td>
 		<td>Xiaomi Mi 10 Pro</td>
-		<td>cmi_global_global_F</td>
 		<td>cmi_global</td>
 		<td>global</td>
 
@@ -957,7 +976,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1321</td>
 		<td>Xiaomi 12 Pro</td>
-		<td>zeus_global_global_F</td>
 		<td>zeus_global</td>
 		<td>global</td>
 
@@ -988,7 +1006,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1228</td>
 		<td>Redmi Note 10S</td>
-		<td>rosemary_ru_global_global_F</td>
 		<td>rosemary_ru_global</td>
 		<td>global</td>
 
@@ -1019,7 +1036,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1124</td>
 		<td>Xiaomi Redmi 9</td>
-		<td>lancelot_ru_global_global_F</td>
 		<td>lancelot_ru_global</td>
 		<td>global</td>
 
@@ -1050,7 +1066,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1306</td>
 		<td>Redmi Note 9T</td>
-		<td>cannong_global_global_F</td>
 		<td>cannong_global</td>
 		<td>global</td>
 
@@ -1081,7 +1096,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1269</td>
 		<td>Xiaomi 11T Pro</td>
-		<td>vili_global_global_F</td>
 		<td>vili_global</td>
 		<td>global</td>
 
@@ -1112,7 +1126,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1242</td>
 		<td>POCO F3</td>
-		<td>alioth_tr_global_global_F</td>
 		<td>alioth_tr_global</td>
 		<td>global</td>
 
@@ -1143,7 +1156,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1092</td>
 		<td>Xiaomi Redmi Note 9</td>
-		<td>merlin_global_global_F</td>
 		<td>merlin_global</td>
 		<td>global</td>
 
@@ -1174,7 +1186,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1369</td>
 		<td>Redmi Note 11 Pro+ 5G</td>
-		<td>pissarro_eea_global_eea_F</td>
 		<td>pissarro_eea_global</td>
 		<td>eea</td>
 
@@ -1205,7 +1216,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1362</td>
 		<td>Xiaomi 12 lite</td>
-		<td>taoyao_global_global_F</td>
 		<td>taoyao_global</td>
 		<td>global</td>
 
@@ -1236,7 +1246,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1361</td>
 		<td>Xiaomi 12 lite</td>
-		<td>taoyao_tw_global_global_F</td>
 		<td>taoyao_tw_global</td>
 		<td>global</td>
 
@@ -1267,7 +1276,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1360</td>
 		<td>POCO C40</td>
-		<td>frost_global_global_F</td>
 		<td>frost_global</td>
 		<td>global</td>
 
@@ -1298,7 +1306,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1359</td>
 		<td>POCO F4</td>
-		<td>munch_global_global_F</td>
 		<td>munch_global</td>
 		<td>global</td>
 
@@ -1329,7 +1336,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1358</td>
 		<td>Redmi 10 5G</td>
-		<td>light_global_global_F</td>
 		<td>light_global</td>
 		<td>global</td>
 
@@ -1360,7 +1366,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1357</td>
 		<td>Redmi note 11s 5G</td>
-		<td>opal_tw_global_global_F</td>
 		<td>opal_tw_global</td>
 		<td>global</td>
 
@@ -1391,7 +1396,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1356</td>
 		<td>Redmi Note 11 Pro</td>
-		<td>viva_ru_global_global_F</td>
 		<td>viva_ru_global</td>
 		<td>global</td>
 
@@ -1422,7 +1426,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1355</td>
 		<td>POCO F4 GT</td>
-		<td>ingres_tw_global_global_F</td>
 		<td>ingres_tw_global</td>
 		<td>global</td>
 
@@ -1453,7 +1456,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1354</td>
 		<td>POCO F4 GT</td>
-		<td>ingres_global_global_F</td>
 		<td>ingres_global</td>
 		<td>global</td>
 
@@ -1484,7 +1486,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1352</td>
 		<td>Redmi Note 11 Pro</td>
-		<td>viva_eea_global_eea_F</td>
 		<td>viva_eea_global</td>
 		<td>eea</td>
 
@@ -1515,7 +1516,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1351</td>
 		<td>Redmi 10A</td>
-		<td>dandelion_c3l2_global_global_F</td>
 		<td>dandelion_c3l2_global</td>
 		<td>global</td>
 
@@ -1546,7 +1546,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1350</td>
 		<td>Redmi 10C</td>
-		<td>fog_eea_global_eea_F</td>
 		<td>fog_eea_global</td>
 		<td>eea</td>
 
@@ -1577,7 +1576,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1349</td>
 		<td>Redmi Note 11 Pro+ 5G</td>
-		<td>pissarro_tw_global_global_F</td>
 		<td>pissarro_tw_global</td>
 		<td>global</td>
 
@@ -1608,7 +1606,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1348</td>
 		<td>Redmi note 11s 5G</td>
-		<td>opal_eea_global_eea_F</td>
 		<td>opal_eea_global</td>
 		<td>eea</td>
 
@@ -1639,7 +1636,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1347</td>
 		<td>Redmi note 11s 5G</td>
-		<td>opal_global_global_F</td>
 		<td>opal_global</td>
 		<td>global</td>
 
@@ -1670,7 +1666,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1346</td>
 		<td>Redmi 10C</td>
-		<td>fog_ru_global_global_F</td>
 		<td>fog_ru_global</td>
 		<td>global</td>
 
@@ -1701,7 +1696,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1345</td>
 		<td>Redmi 10</td>
-		<td>selene_tr_global_global_F</td>
 		<td>selene_tr_global</td>
 		<td>global</td>
 
@@ -1732,7 +1726,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1344</td>
 		<td>Redmi 10A</td>
-		<td>dandelion_c3l2_tw_global_global_F</td>
 		<td>dandelion_c3l2_tw_global</td>
 		<td>global</td>
 
@@ -1763,7 +1756,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1343</td>
 		<td>Redmi 10C</td>
-		<td>fog_tw_global_global_F</td>
 		<td>fog_tw_global</td>
 		<td>global</td>
 
@@ -1794,7 +1786,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1342</td>
 		<td>POCO X4 Pro 5G</td>
-		<td>veux_global_global_F</td>
 		<td>veux_global</td>
 		<td>global</td>
 
@@ -1825,7 +1816,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1341</td>
 		<td>Redmi Note 11 Pro+ 5G</td>
-		<td>pissarro_global_global_F</td>
 		<td>pissarro_global</td>
 		<td>global</td>
 
@@ -1856,7 +1846,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1340</td>
 		<td>Redmi Note 11 Pro</td>
-		<td>viva_tw_global_global_F</td>
 		<td>viva_tw_global</td>
 		<td>global</td>
 
@@ -1887,7 +1876,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1339</td>
 		<td>Xiaomi 12X</td>
-		<td>psyche_tw_global_global_F</td>
 		<td>psyche_tw_global</td>
 		<td>global</td>
 
@@ -1918,7 +1906,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1338</td>
 		<td>Xiaomi 12X</td>
-		<td>psyche_ru_global_global_F</td>
 		<td>psyche_ru_global</td>
 		<td>global</td>
 
@@ -1949,7 +1936,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1337</td>
 		<td>Xiaomi 12X</td>
-		<td>psyche_eea_global_eea_F</td>
 		<td>psyche_eea_global</td>
 		<td>eea</td>
 
@@ -1980,7 +1966,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1336</td>
 		<td>Xiaomi 12X</td>
-		<td>psyche_global_global_F</td>
 		<td>psyche_global</td>
 		<td>global</td>
 
@@ -2011,7 +1996,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1335</td>
 		<td>Redmi note 11S</td>
-		<td>fleur_tr_global_global_F</td>
 		<td>fleur_tr_global</td>
 		<td>global</td>
 
@@ -2042,7 +2026,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1334</td>
 		<td>POCO M4 Pro</td>
-		<td>fleur_tr_global_global_F</td>
 		<td>fleur_tr_global</td>
 		<td>global</td>
 
@@ -2073,7 +2056,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1333</td>
 		<td>POCO M4 Pro</td>
-		<td>fleur_id_global_global_F</td>
 		<td>fleur_id_global</td>
 		<td>global</td>
 
@@ -2104,7 +2086,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1332</td>
 		<td>Xiaomi 12 Pro</td>
-		<td>zeus_eea_global_eea_F</td>
 		<td>zeus_eea_global</td>
 		<td>eea</td>
 
@@ -2135,7 +2116,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1331</td>
 		<td>Redmi 10C</td>
-		<td>fog_in_global_in_F</td>
 		<td>fog_in_global</td>
 		<td>in</td>
 
@@ -2166,7 +2146,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1330</td>
 		<td>Redmi 10C</td>
-		<td>fog_global_global_F</td>
 		<td>fog_global</td>
 		<td>global</td>
 
@@ -2197,7 +2176,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1329</td>
 		<td>Xiaomi 12</td>
-		<td>cupid_ru_global_global_F</td>
 		<td>cupid_ru_global</td>
 		<td>global</td>
 
@@ -2228,7 +2206,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1328</td>
 		<td>Xiaomi 12</td>
-		<td>cupid_id_global_global_F</td>
 		<td>cupid_id_global</td>
 		<td>global</td>
 
@@ -2259,7 +2236,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1327</td>
 		<td>Xiaomi 12</td>
-		<td>cupid_tw_global_global_F</td>
 		<td>cupid_tw_global</td>
 		<td>global</td>
 
@@ -2290,7 +2266,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1326</td>
 		<td>Xiaomi 12</td>
-		<td>cupid_eea_global_eea_F</td>
 		<td>cupid_eea_global</td>
 		<td>eea</td>
 
@@ -2321,7 +2296,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1325</td>
 		<td>Xiaomi 12</td>
-		<td>cupid_global_global_F</td>
 		<td>cupid_global</td>
 		<td>global</td>
 
@@ -2352,7 +2326,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1324</td>
 		<td>Xiaomi 12 Pro</td>
-		<td>zeus_ru_global_global_F</td>
 		<td>zeus_ru_global</td>
 		<td>global</td>
 
@@ -2383,7 +2356,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1323</td>
 		<td>Xiaomi 12 Pro</td>
-		<td>zeus_id_global_global_F</td>
 		<td>zeus_id_global</td>
 		<td>global</td>
 
@@ -2414,7 +2386,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1322</td>
 		<td>Xiaomi 12 Pro</td>
-		<td>zeus_tw_global_global_F</td>
 		<td>zeus_tw_global</td>
 		<td>global</td>
 
@@ -2445,7 +2416,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1321</td>
 		<td>Xiaomi 12 Pro</td>
-		<td>zeus_global_global_F</td>
 		<td>zeus_global</td>
 		<td>global</td>
 
@@ -2476,7 +2446,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1320</td>
 		<td>Redmi Note 11 NFC</td>
-		<td>spesn_eea_global_eea_F</td>
 		<td>spesn_eea_global</td>
 		<td>eea</td>
 
@@ -2507,7 +2476,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1319</td>
 		<td>POCO M4 Pro 5G</td>
-		<td>evergreen_ru_global_global_F</td>
 		<td>evergreen_ru_global</td>
 		<td>global</td>
 
@@ -2538,7 +2506,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1318</td>
 		<td>Redmi Note 11 Pro</td>
-		<td>viva_global_global_F</td>
 		<td>viva_global</td>
 		<td>global</td>
 
@@ -2569,7 +2536,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1317</td>
 		<td>Redmi Note 11 Pro 5G</td>
-		<td>veux_tw_global_global_F</td>
 		<td>veux_tw_global</td>
 		<td>global</td>
 
@@ -2600,7 +2566,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1316</td>
 		<td>Redmi Note 11 Pro 5G</td>
-		<td>veux_tr_global_global_F</td>
 		<td>veux_tr_global</td>
 		<td>global</td>
 
@@ -2631,7 +2596,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1315</td>
 		<td>Redmi Note 11 Pro 5G</td>
-		<td>veux_eea_global_eea_F</td>
 		<td>veux_eea_global</td>
 		<td>eea</td>
 
@@ -2662,7 +2626,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1314</td>
 		<td>Redmi Note 11 Pro 5G</td>
-		<td>veux_ru_global_global_F</td>
 		<td>veux_ru_global</td>
 		<td>global</td>
 
@@ -2693,7 +2656,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1313</td>
 		<td>Redmi Note 11 Pro 5G</td>
-		<td>veux_global_global_F</td>
 		<td>veux_global</td>
 		<td>global</td>
 
@@ -2724,7 +2686,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1312</td>
 		<td>POCO M4 Pro</td>
-		<td>fleur_tw_global_global_F</td>
 		<td>fleur_tw_global</td>
 		<td>global</td>
 
@@ -2755,7 +2716,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1311</td>
 		<td>POCO M4 Pro</td>
-		<td>fleur_ru_global_global_F</td>
 		<td>fleur_ru_global</td>
 		<td>global</td>
 
@@ -2786,7 +2746,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1310</td>
 		<td>POCO M4 Pro</td>
-		<td>fleur_eea_global_eea_F</td>
 		<td>fleur_eea_global</td>
 		<td>eea</td>
 
@@ -2817,7 +2776,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1309</td>
 		<td>POCO M4 Pro</td>
-		<td>fleur_in_global_in_F</td>
 		<td>fleur_in_global</td>
 		<td>in</td>
 
@@ -2848,7 +2806,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1308</td>
 		<td>POCO M4 Pro</td>
-		<td>fleur_global_global_F</td>
 		<td>fleur_global</td>
 		<td>global</td>
 
@@ -2879,7 +2836,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1307</td>
 		<td>Redmi note 11S</td>
-		<td>fleur_tw_global_global_F</td>
 		<td>fleur_tw_global</td>
 		<td>global</td>
 
@@ -2910,7 +2866,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1306</td>
 		<td>Redmi Note 9T</td>
-		<td>cannong_global_global_F</td>
 		<td>cannong_global</td>
 		<td>global</td>
 
@@ -2941,7 +2896,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1304</td>
 		<td>Redmi note 11S</td>
-		<td>fleur_ru_global_global_F</td>
 		<td>fleur_ru_global</td>
 		<td>global</td>
 
@@ -2972,7 +2926,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1303</td>
 		<td>Redmi note 11S</td>
-		<td>fleur_eea_global_eea_F</td>
 		<td>fleur_eea_global</td>
 		<td>eea</td>
 
@@ -3003,7 +2956,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1302</td>
 		<td>Redmi note 11S</td>
-		<td>fleur_in_global_in_F</td>
 		<td>fleur_in_global</td>
 		<td>in</td>
 
@@ -3034,7 +2986,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1301</td>
 		<td>Redmi note 11S</td>
-		<td>fleur_global_global_F</td>
 		<td>fleur_global</td>
 		<td>global</td>
 
@@ -3065,7 +3016,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1300</td>
 		<td>Redmi note 11</td>
-		<td>spesn_ru_global_global_F</td>
 		<td>spesn_ru_global</td>
 		<td>global</td>
 
@@ -3096,7 +3046,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1299</td>
 		<td>Redmi note 11</td>
-		<td>spes_global_global_F</td>
 		<td>spes_global</td>
 		<td>global</td>
 
@@ -3127,7 +3076,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1298</td>
 		<td>Xiaomi Mi 11 Lite 5G</td>
-		<td>renoir_jp_global_global_F</td>
 		<td>renoir_jp_global</td>
 		<td>global</td>
 
@@ -3158,7 +3106,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1297</td>
 		<td>Xiaomi 11T</td>
-		<td>agate_ru_global_global_F</td>
 		<td>agate_ru_global</td>
 		<td>global</td>
 
@@ -3189,7 +3136,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1296</td>
 		<td>POCO M4 Pro 5G</td>
-		<td>evergreen_tw_global_global_F</td>
 		<td>evergreen_tw_global</td>
 		<td>global</td>
 
@@ -3220,7 +3166,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1295</td>
 		<td>POCO M4 Pro 5G</td>
-		<td>evergreen_ru_global_global_F</td>
 		<td>evergreen_ru_global</td>
 		<td>global</td>
 
@@ -3251,7 +3196,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1294</td>
 		<td>POCO M4 Pro 5G</td>
-		<td>evergreen_eea_global_eea_F</td>
 		<td>evergreen_eea_global</td>
 		<td>eea</td>
 
@@ -3282,7 +3226,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1293</td>
 		<td>POCO M4 Pro 5G</td>
-		<td>evergreen_global_global_F</td>
 		<td>evergreen_global</td>
 		<td>global</td>
 
@@ -3313,7 +3256,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1292</td>
 		<td>Xiaomi Mi 11 Lite</td>
-		<td>courbet_ru_global_global_F</td>
 		<td>courbet_ru_global</td>
 		<td>global</td>
 
@@ -3344,7 +3286,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1291</td>
 		<td>Xiaomi Mi 11 Lite 5G</td>
-		<td>renoir_ru_global_global_F</td>
 		<td>renoir_ru_global</td>
 		<td>global</td>
 
@@ -3375,7 +3316,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1290</td>
 		<td>Xiaomi 11T Pro</td>
-		<td>vili_jp_global_global_F</td>
 		<td>vili_jp_global</td>
 		<td>global</td>
 
@@ -3406,7 +3346,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1289</td>
 		<td>Redmi 10</td>
-		<td>selene_eea_global_eea_F</td>
 		<td>selene_eea_global</td>
 		<td>eea</td>
 
@@ -3437,7 +3376,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1288</td>
 		<td>Xiaomi pad 5</td>
-		<td>nabu_eea_global_eea_F</td>
 		<td>nabu_eea_global</td>
 		<td>eea</td>
 
@@ -3468,7 +3406,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1287</td>
 		<td>Xiaomi 11T</td>
-		<td>agate_tw_global_global_F</td>
 		<td>agate_tw_global</td>
 		<td>global</td>
 
@@ -3499,7 +3436,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1286</td>
 		<td>Xiaomi pad 5</td>
-		<td>nabu_tw_global_global_F</td>
 		<td>nabu_tw_global</td>
 		<td>global</td>
 
@@ -3530,7 +3466,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1285</td>
 		<td>Redmi 10</td>
-		<td>selene_tw_global_global_F</td>
 		<td>selene_tw_global</td>
 		<td>global</td>
 
@@ -3561,7 +3496,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1284</td>
 		<td>POCO M3 Pro 5G</td>
-		<td>camellian_global_global_F</td>
 		<td>camellian_global</td>
 		<td>global</td>
 
@@ -3592,7 +3526,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1283</td>
 		<td>Xiaomi pad 5</td>
-		<td>nabu_global_global_F</td>
 		<td>nabu_global</td>
 		<td>global</td>
 
@@ -3623,7 +3556,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1282</td>
 		<td>Xiaomi 11 Lite 5G NE</td>
-		<td>lisa_tr_global_global_F</td>
 		<td>lisa_tr_global</td>
 		<td>global</td>
 
@@ -3654,7 +3586,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1281</td>
 		<td>Xiaomi 11 Lite 5G NE</td>
-		<td>lisa_tw_global_global_F</td>
 		<td>lisa_tw_global</td>
 		<td>global</td>
 
@@ -3685,7 +3616,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1280</td>
 		<td>Xiaomi 11 Lite 5G NE</td>
-		<td>lisa_in_global_in_F</td>
 		<td>lisa_in_global</td>
 		<td>in</td>
 
@@ -3716,7 +3646,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1279</td>
 		<td>Xiaomi 11 Lite 5G NE</td>
-		<td>lisa_ru_global_global_F</td>
 		<td>lisa_ru_global</td>
 		<td>global</td>
 
@@ -3747,7 +3676,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1278</td>
 		<td>Xiaomi 11 Lite 5G NE</td>
-		<td>lisa_eea_global_eea_F</td>
 		<td>lisa_eea_global</td>
 		<td>eea</td>
 
@@ -3778,7 +3706,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1277</td>
 		<td>Xiaomi 11 Lite 5G NE</td>
-		<td>lisa_global_global_F</td>
 		<td>lisa_global</td>
 		<td>global</td>
 
@@ -3809,7 +3736,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1276</td>
 		<td>Redmi 9T</td>
-		<td>lime_eea_global_eea_F</td>
 		<td>lime_eea_global</td>
 		<td>eea</td>
 
@@ -3840,7 +3766,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1275</td>
 		<td>Xiaomi 11T</td>
-		<td>agate_eea_global_eea_F</td>
 		<td>agate_eea_global</td>
 		<td>eea</td>
 
@@ -3871,7 +3796,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1274</td>
 		<td>Xiaomi 11T</td>
-		<td>agate_global_global_F</td>
 		<td>agate_global</td>
 		<td>global</td>
 
@@ -3902,7 +3826,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1273</td>
 		<td>Xiaomi 11T Pro</td>
-		<td>vili_tw_global_global_F</td>
 		<td>vili_tw_global</td>
 		<td>global</td>
 
@@ -3933,7 +3856,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1272</td>
 		<td>Xiaomi 11T Pro</td>
-		<td>vili_eea_global_eea_F</td>
 		<td>vili_eea_global</td>
 		<td>eea</td>
 
@@ -3964,7 +3886,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1271</td>
 		<td>Xiaomi 11T Pro</td>
-		<td>vili_ru_global_global_F</td>
 		<td>vili_ru_global</td>
 		<td>global</td>
 
@@ -3995,7 +3916,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1270</td>
 		<td>Xiaomi 11T Pro</td>
-		<td>vili_tr_global_global_F</td>
 		<td>vili_tr_global</td>
 		<td>global</td>
 
@@ -4026,7 +3946,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1269</td>
 		<td>Xiaomi 11T Pro</td>
-		<td>vili_global_global_F</td>
 		<td>vili_global</td>
 		<td>global</td>
 
@@ -4057,7 +3976,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1268</td>
 		<td>Xiaomi Redmi Note 8</td>
-		<td>ginkgo_eea_global_eea_F</td>
 		<td>ginkgo_eea_global</td>
 		<td>eea</td>
 
@@ -4088,7 +4006,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1267</td>
 		<td>POCO M3 Pro</td>
-		<td>camellian_tw_global_global_F</td>
 		<td>camellian_tw_global</td>
 		<td>global</td>
 
@@ -4119,7 +4036,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1266</td>
 		<td>Redmi 10</td>
-		<td>selene_id_global_global_F</td>
 		<td>selene_id_global</td>
 		<td>global</td>
 
@@ -4150,7 +4066,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1265</td>
 		<td>Redmi 10</td>
-		<td>selene_ru_global_global_F</td>
 		<td>selene_ru_global</td>
 		<td>global</td>
 
@@ -4181,7 +4096,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1264</td>
 		<td>Redmi 10</td>
-		<td>selene_global_global_F</td>
 		<td>selene_global</td>
 		<td>global</td>
 
@@ -4212,7 +4126,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1263</td>
 		<td>POCO X3 GT</td>
-		<td>chopin_tr_global_global_F</td>
 		<td>chopin_tr_global</td>
 		<td>global</td>
 
@@ -4243,7 +4156,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1262</td>
 		<td>POCO X3 GT</td>
-		<td>chopin_id_global_global_F</td>
 		<td>chopin_id_global</td>
 		<td>global</td>
 
@@ -4274,7 +4186,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1261</td>
 		<td>POCO X3 GT</td>
-		<td>chopin_global_global_F</td>
 		<td>chopin_global</td>
 		<td>global</td>
 
@@ -4305,7 +4216,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1260</td>
 		<td>Redmi Note10T</td>
-		<td>camellian_ru_global_global_F</td>
 		<td>camellian_ru_global</td>
 		<td>global</td>
 
@@ -4336,7 +4246,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1259</td>
 		<td>Redmi Note 8 2021</td>
-		<td>biloba_ru_global_global_F</td>
 		<td>biloba_ru_global</td>
 		<td>global</td>
 
@@ -4367,7 +4276,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1258</td>
 		<td>Redmi Note 8 2021</td>
-		<td>biloba_eea_global_eea_F</td>
 		<td>biloba_eea_global</td>
 		<td>eea</td>
 
@@ -4398,7 +4306,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1257</td>
 		<td>Redmi Note 8 2021</td>
-		<td>biloba_global_global_F</td>
 		<td>biloba_global</td>
 		<td>global</td>
 
@@ -4429,7 +4336,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1256</td>
 		<td>POCO M3 Pro</td>
-		<td>camellian_ru_global_global_F</td>
 		<td>camellian_ru_global</td>
 		<td>global</td>
 
@@ -4460,7 +4366,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1255</td>
 		<td>Redmi Note10 5G</td>
-		<td>camellian_tw_global_global_F</td>
 		<td>camellian_tw_global</td>
 		<td>global</td>
 
@@ -4491,7 +4396,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1254</td>
 		<td>Xiaomi Mi 11 Lite 5G</td>
-		<td>renoir_eea_global_eea_F</td>
 		<td>renoir_eea_global</td>
 		<td>eea</td>
 
@@ -4522,7 +4426,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1253</td>
 		<td>Xiaomi Mi 11 Lite 5G</td>
-		<td>renoir_global_global_F</td>
 		<td>renoir_global</td>
 		<td>global</td>
 
@@ -4553,7 +4456,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1252</td>
 		<td>Xiaomi Redmi Note 8</td>
-		<td>ginkgo_ru_global_global_F</td>
 		<td>ginkgo_ru_global</td>
 		<td>global</td>
 
@@ -4584,7 +4486,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1251</td>
 		<td>Redmi Note10 5G</td>
-		<td>camellian_tr_global_global_F</td>
 		<td>camellian_tr_global</td>
 		<td>global</td>
 
@@ -4615,7 +4516,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1250</td>
 		<td>Xiaomi Redmi Note 9S</td>
-		<td>curtana_tr_global_global_F</td>
 		<td>curtana_tr_global</td>
 		<td>global</td>
 
@@ -4646,7 +4546,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1249</td>
 		<td>Xiaomi Redmi Note 9 Pro</td>
-		<td>joyeuse_tr_global_global_F</td>
 		<td>joyeuse_tr_global</td>
 		<td>global</td>
 
@@ -4677,7 +4576,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1248</td>
 		<td>Xiaomi Redmi Note 9</td>
-		<td>merlin_tr_global_global_F</td>
 		<td>merlin_tr_global</td>
 		<td>global</td>
 
@@ -4708,7 +4606,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1246</td>
 		<td>POCO F2 Pro</td>
-		<td>lmi_tr_global_global_F</td>
 		<td>lmi_tr_global</td>
 		<td>global</td>
 
@@ -4739,7 +4636,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1245</td>
 		<td>Xiaomi Redmi 9A</td>
-		<td>dandelion_tr_global_global_F</td>
 		<td>dandelion_tr_global</td>
 		<td>global</td>
 
@@ -4770,7 +4666,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1244</td>
 		<td>Xiaomi Redmi 9C</td>
-		<td>angelica_tr_global_global_F</td>
 		<td>angelica_tr_global</td>
 		<td>global</td>
 
@@ -4801,7 +4696,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1243</td>
 		<td>Xiaomi Mi 10T/Pro</td>
-		<td>apollo_tr_global_global_F</td>
 		<td>apollo_tr_global</td>
 		<td>global</td>
 
@@ -4832,7 +4726,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1242</td>
 		<td>POCO F3</td>
-		<td>alioth_tr_global_global_F</td>
 		<td>alioth_tr_global</td>
 		<td>global</td>
 
@@ -4863,7 +4756,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1241</td>
 		<td>POCO M3</td>
-		<td>camellian_id_global_global_F</td>
 		<td>camellian_id_global</td>
 		<td>global</td>
 
@@ -4894,7 +4786,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1240</td>
 		<td>POCO M3 Pro</td>
-		<td>camellia_in_global_in_F</td>
 		<td>camellia_in_global</td>
 		<td>in</td>
 
@@ -4925,7 +4816,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1239</td>
 		<td>POCO M3 Pro</td>
-		<td>camellian_eea_global_eea_F</td>
 		<td>camellian_eea_global</td>
 		<td>eea</td>
 
@@ -4956,7 +4846,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1238</td>
 		<td>POCO M3 Pro</td>
-		<td>camellian_global_global_F</td>
 		<td>camellian_global</td>
 		<td>global</td>
 
@@ -4987,7 +4876,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1237</td>
 		<td>Redmi 9T</td>
-		<td>lime_tr_global_global_F</td>
 		<td>lime_tr_global</td>
 		<td>global</td>
 
@@ -5018,7 +4906,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1236</td>
 		<td>POCO M3</td>
-		<td>citrus_tr_global_global_F</td>
 		<td>citrus_tr_global</td>
 		<td>global</td>
 
@@ -5049,7 +4936,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1235</td>
 		<td>Mi 11i</td>
-		<td>haydn_in_global_in_F</td>
 		<td>haydn_in_global</td>
 		<td>in</td>
 
@@ -5080,7 +4966,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1234</td>
 		<td>Mi 11i</td>
-		<td>haydn_eea_global_eea_F</td>
 		<td>haydn_eea_global</td>
 		<td>eea</td>
 
@@ -5111,7 +4996,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1233</td>
 		<td>Mi 11i</td>
-		<td>haydn_global_global_F</td>
 		<td>haydn_global</td>
 		<td>global</td>
 
@@ -5142,7 +5026,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1232</td>
 		<td>Redmi Note 10S</td>
-		<td>rosemary_tw_global_global_F</td>
 		<td>rosemary_tw_global</td>
 		<td>global</td>
 
@@ -5173,7 +5056,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1231</td>
 		<td>Redmi Note 10S</td>
-		<td>rosemary_tr_global_global_F</td>
 		<td>rosemary_tr_global</td>
 		<td>global</td>
 
@@ -5204,7 +5086,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1230</td>
 		<td>Redmi Note 10S</td>
-		<td>rosemary_id_global_global_F</td>
 		<td>rosemary_id_global</td>
 		<td>global</td>
 
@@ -5235,7 +5116,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1229</td>
 		<td>Redmi Note 10S</td>
-		<td>rosemary_in_global_in_F</td>
 		<td>rosemary_in_global</td>
 		<td>in</td>
 
@@ -5266,7 +5146,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1228</td>
 		<td>Redmi Note 10S</td>
-		<td>rosemary_ru_global_global_F</td>
 		<td>rosemary_ru_global</td>
 		<td>global</td>
 
@@ -5297,7 +5176,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1227</td>
 		<td>Redmi Note 10S</td>
-		<td>rosemary_eea_global_eea_F</td>
 		<td>rosemary_eea_global</td>
 		<td>eea</td>
 
@@ -5328,7 +5206,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1226</td>
 		<td>Redmi Note 10S</td>
-		<td>rosemary_global_global_F</td>
 		<td>rosemary_global</td>
 		<td>global</td>
 
@@ -5359,7 +5236,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1225</td>
 		<td>Xiaomi Mi 11 Lite 5G</td>
-		<td>renoir_tw_global_global_F</td>
 		<td>renoir_tw_global</td>
 		<td>global</td>
 
@@ -5390,7 +5266,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1224</td>
 		<td>Redmi Note10 5G</td>
-		<td>camellian_eea_global_eea_F</td>
 		<td>camellian_eea_global</td>
 		<td>eea</td>
 
@@ -5421,7 +5296,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1223</td>
 		<td>Redmi Note10 5G</td>
-		<td>camellian_global_global_F</td>
 		<td>camellian_global</td>
 		<td>global</td>
 
@@ -5452,7 +5326,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1222</td>
 		<td>Mi 11 Ultra</td>
-		<td>star_id_global_global_F</td>
 		<td>star_id_global</td>
 		<td>global</td>
 
@@ -5483,7 +5356,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1221</td>
 		<td>Mi 11 Ultra</td>
-		<td>star_in_global_in_F</td>
 		<td>star_in_global</td>
 		<td>in</td>
 
@@ -5514,7 +5386,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1220</td>
 		<td>Mi 11 Ultra</td>
-		<td>star_eea_global_eea_F</td>
 		<td>star_eea_global</td>
 		<td>eea</td>
 
@@ -5545,7 +5416,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1219</td>
 		<td>Mi 11 Ultra</td>
-		<td>star_global_global_F</td>
 		<td>star_global</td>
 		<td>global</td>
 
@@ -5576,7 +5446,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1218</td>
 		<td>Redmi 9T</td>
-		<td>lime_ru_global_global_F</td>
 		<td>lime_ru_global</td>
 		<td>global</td>
 
@@ -5607,7 +5476,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1217</td>
 		<td>POCO M3</td>
-		<td>citrus_tw_global_global_F</td>
 		<td>citrus_tw_global</td>
 		<td>global</td>
 
@@ -5638,7 +5506,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1216</td>
 		<td>POCO F3</td>
-		<td>alioth_tw_global_global_F</td>
 		<td>alioth_tw_global</td>
 		<td>global</td>
 
@@ -5669,7 +5536,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1215</td>
 		<td>Xiaomi Redmi Note 9 Pro</td>
-		<td>joyeuse_tw_global_global_F</td>
 		<td>joyeuse_tw_global</td>
 		<td>global</td>
 
@@ -5700,7 +5566,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1214</td>
 		<td>Xiaomi Redmi Note 9</td>
-		<td>merlin_tw_global_global_F</td>
 		<td>merlin_tw_global</td>
 		<td>global</td>
 
@@ -5731,7 +5596,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1213</td>
 		<td>Redmi 9T</td>
-		<td>lime_tw_global_global_F</td>
 		<td>lime_tw_global</td>
 		<td>global</td>
 
@@ -5762,7 +5626,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1212</td>
 		<td>Xiaomi Mi 10T/Pro</td>
-		<td>apollo_tw_global_global_F</td>
 		<td>apollo_tw_global</td>
 		<td>global</td>
 
@@ -5793,7 +5656,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1211</td>
 		<td>Xiaomi Mi 10T Lite</td>
-		<td>gauguin_tw_global_global_F</td>
 		<td>gauguin_tw_global</td>
 		<td>global</td>
 
@@ -5824,7 +5686,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1210</td>
 		<td>Xiaomi Mi 10 Lite 5G</td>
-		<td>monet_tw_global_global_F</td>
 		<td>monet_tw_global</td>
 		<td>global</td>
 
@@ -5855,7 +5716,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1209</td>
 		<td>POCO F3</td>
-		<td>alioth_eea_global_eea_F</td>
 		<td>alioth_eea_global</td>
 		<td>eea</td>
 
@@ -5886,7 +5746,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1208</td>
 		<td>POCO F3</td>
-		<td>alioth_global_global_F</td>
 		<td>alioth_global</td>
 		<td>global</td>
 
@@ -5917,7 +5776,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1207</td>
 		<td>Xiaomi Mi 11 Lite</td>
-		<td>courbet_eea_global_eea_F</td>
 		<td>courbet_eea_global</td>
 		<td>eea</td>
 
@@ -5948,7 +5806,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1206</td>
 		<td>Xiaomi Mi 11 Lite</td>
-		<td>courbet_global_global_F</td>
 		<td>courbet_global</td>
 		<td>global</td>
 
@@ -5979,7 +5836,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1205</td>
 		<td>POCO M3</td>
-		<td>citrus_ru_global_global_F</td>
 		<td>citrus_ru_global</td>
 		<td>global</td>
 
@@ -6010,7 +5866,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1204</td>
 		<td>POCO X3 Pro</td>
-		<td>vayu_tw_global_global_F</td>
 		<td>vayu_tw_global</td>
 		<td>global</td>
 
@@ -6041,7 +5896,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1203</td>
 		<td>POCO X3 Pro</td>
-		<td>vayu_tr_global_global_F</td>
 		<td>vayu_tr_global</td>
 		<td>global</td>
 
@@ -6072,7 +5926,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1202</td>
 		<td>POCO X3 Pro</td>
-		<td>vayu_id_global_global_F</td>
 		<td>vayu_id_global</td>
 		<td>global</td>
 
@@ -6103,7 +5956,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1201</td>
 		<td>POCO X3 Pro</td>
-		<td>vayu_in_global_in_F</td>
 		<td>vayu_in_global</td>
 		<td>in</td>
 
@@ -6134,7 +5986,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1200</td>
 		<td>POCO X3 Pro</td>
-		<td>vayu_ru_global_global_F</td>
 		<td>vayu_ru_global</td>
 		<td>global</td>
 
@@ -6165,7 +6016,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1199</td>
 		<td>POCO X3 Pro</td>
-		<td>vayu_eea_global_eea_F</td>
 		<td>vayu_eea_global</td>
 		<td>eea</td>
 
@@ -6196,7 +6046,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1198</td>
 		<td>POCO X3 Pro</td>
-		<td>vayu_global_global_F</td>
 		<td>vayu_global</td>
 		<td>global</td>
 
@@ -6227,7 +6076,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1197</td>
 		<td>Xiaomi Mi 11</td>
-		<td>venus_tw_global_global_F</td>
 		<td>venus_tw_global</td>
 		<td>global</td>
 
@@ -6258,7 +6106,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1196</td>
 		<td>Xiaomi Mi 11</td>
-		<td>venus_tr_global_global_F</td>
 		<td>venus_tr_global</td>
 		<td>global</td>
 
@@ -6289,7 +6136,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1195</td>
 		<td>Xiaomi Mi 11</td>
-		<td>venus_ru_global_global_F</td>
 		<td>venus_ru_global</td>
 		<td>global</td>
 
@@ -6320,7 +6166,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1194</td>
 		<td>Xiaomi Mi 11</td>
-		<td>venus_id_global_global_F</td>
 		<td>venus_id_global</td>
 		<td>global</td>
 
@@ -6351,7 +6196,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1193</td>
 		<td>Xiaomi Mi 11</td>
-		<td>venus_in_global_in_F</td>
 		<td>venus_in_global</td>
 		<td></td>
 
@@ -6382,7 +6226,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1192</td>
 		<td>Xiaomi Mi 11</td>
-		<td>venus_eea_global_eea_F</td>
 		<td>venus_eea_global</td>
 		<td>eea</td>
 
@@ -6413,7 +6256,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1191</td>
 		<td>Xiaomi Mi 11</td>
-		<td>venus_global_global_F</td>
 		<td>venus_global</td>
 		<td>global</td>
 
@@ -6444,7 +6286,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1190</td>
 		<td>Redmi Note 10</td>
-		<td>mojito_tr_global_global_F</td>
 		<td>mojito_tr_global</td>
 		<td>global</td>
 
@@ -6475,7 +6316,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1189</td>
 		<td>Redmi Note 10</td>
-		<td>mojito_ru_global_global_F</td>
 		<td>mojito_ru_global</td>
 		<td>global</td>
 
@@ -6506,7 +6346,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1188</td>
 		<td>Redmi Note 10</td>
-		<td>mojito_id_global_global_F</td>
 		<td>mojito_id_global</td>
 		<td>global</td>
 
@@ -6537,7 +6376,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1187</td>
 		<td>Redmi Note 10</td>
-		<td>mojito_in_global_in_F</td>
 		<td>mojito_in_global</td>
 		<td>in</td>
 
@@ -6568,7 +6406,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1186</td>
 		<td>Redmi Note 10</td>
-		<td>mojito_eea_global_eea_F</td>
 		<td>mojito_eea_global</td>
 		<td>eea</td>
 
@@ -6599,7 +6436,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1185</td>
 		<td>Redmi Note 10</td>
-		<td>mojito_global_global_F</td>
 		<td>mojito_global</td>
 		<td>global</td>
 
@@ -6630,7 +6466,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1176</td>
 		<td>Redmi Note 9T</td>
-		<td>cannong_ru_global_global_F</td>
 		<td>cannong_ru_global</td>
 		<td>global</td>
 
@@ -6661,7 +6496,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1175</td>
 		<td>Redmi Note 9T</td>
-		<td>cannong_tw_global_global_F</td>
 		<td>cannong_tw_global</td>
 		<td>global</td>
 
@@ -6692,7 +6526,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1174</td>
 		<td>Redmi Note 9T</td>
-		<td>cannong_eea_global_eea_F</td>
 		<td>cannong_eea_global</td>
 		<td>eea</td>
 
@@ -6723,7 +6556,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1173</td>
 		<td>POCO M3</td>
-		<td>citrus_eea_global_eea_F</td>
 		<td>citrus_eea_global</td>
 		<td>eea</td>
 
@@ -6754,7 +6586,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1172</td>
 		<td>POCO M3</td>
-		<td>citrus_in_global_in_F</td>
 		<td>citrus_in_global</td>
 		<td>in</td>
 
@@ -6785,7 +6616,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1171</td>
 		<td>POCO M3</td>
-		<td>citrus_global_global_F</td>
 		<td>citrus_global</td>
 		<td>global</td>
 
@@ -6816,7 +6646,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1170</td>
 		<td>POCO M3</td>
-		<td>citrus_id_global_global_F</td>
 		<td>citrus_id_global</td>
 		<td>global</td>
 
@@ -6847,7 +6676,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1169</td>
 		<td>Redmi 9 Power</td>
-		<td>lime_global_global_F</td>
 		<td>lime_global</td>
 		<td>global</td>
 
@@ -6878,7 +6706,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1168</td>
 		<td>Redmi 9T</td>
-		<td>lime_global_global_F</td>
 		<td>lime_global</td>
 		<td>global</td>
 
@@ -6909,7 +6736,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1167</td>
 		<td>Redmi Note 9 4G</td>
-		<td>lime_global_global_F</td>
 		<td>lime_global</td>
 		<td>global</td>
 
@@ -6940,7 +6766,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1166</td>
 		<td>Xiaomi Mi 10T Lite</td>
-		<td>gauguin_eea_global_eea_F</td>
 		<td>gauguin_eea_global</td>
 		<td>eea</td>
 
@@ -6971,7 +6796,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1165</td>
 		<td>Xiaomi Mi 10T Lite</td>
-		<td>gauguin_global_global_F</td>
 		<td>gauguin_global</td>
 		<td>global</td>
 
@@ -7002,7 +6826,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1164</td>
 		<td>Xiaomi Mi 10T Lite</td>
-		<td>gauguin_in_global_in_F</td>
 		<td>gauguin_in_global</td>
 		<td>in</td>
 
@@ -7033,7 +6856,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1163</td>
 		<td>Xiaomi Mi 10T Lite</td>
-		<td>gauguin_ru_global_global_F</td>
 		<td>gauguin_ru_global</td>
 		<td></td>
 
@@ -7064,7 +6886,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1162</td>
 		<td>Xiaomi Redmi Note 9 Pro Max</td>
-		<td>excalibur_in_global_in_F</td>
 		<td>excalibur_in_global</td>
 		<td>in</td>
 
@@ -7095,7 +6916,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1161</td>
 		<td>Xiaomi Mi 10T/Pro</td>
-		<td>apollo_ru_global_global_F</td>
 		<td>apollo_ru_global</td>
 		<td>global</td>
 
@@ -7126,7 +6946,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1160</td>
 		<td>Xiaomi Mi 10T/Pro</td>
-		<td>apollo_eea_global_eea_F</td>
 		<td>apollo_eea_global</td>
 		<td>eea</td>
 
@@ -7157,7 +6976,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1159</td>
 		<td>Xiaomi Mi 10T/Pro</td>
-		<td>apollo_in_global_in_F</td>
 		<td>apollo_in_global</td>
 		<td>in</td>
 
@@ -7188,7 +7006,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1158</td>
 		<td>Xiaomi Mi 10T/Pro</td>
-		<td>apollo_global_global_F</td>
 		<td>apollo_global</td>
 		<td>global</td>
 
@@ -7219,7 +7036,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1157</td>
 		<td>POCO X3 NFC</td>
-		<td>surya_id_global_global_F</td>
 		<td>surya_id_global</td>
 		<td>global</td>
 
@@ -7250,7 +7066,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1156</td>
 		<td>POCO X3 NFC</td>
-		<td>surya_in_global_in_F</td>
 		<td>surya_in_global</td>
 		<td>in</td>
 
@@ -7281,7 +7096,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1154</td>
 		<td>POCO X3 NFC</td>
-		<td>surya_ru_global_global_F</td>
 		<td>surya_ru_global</td>
 		<td>global</td>
 
@@ -7312,7 +7126,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1152</td>
 		<td>POCO X3 NFC</td>
-		<td>surya_global_global_F</td>
 		<td>surya_global</td>
 		<td>global</td>
 
@@ -7343,7 +7156,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1151</td>
 		<td>Xiaomi Redmi 9</td>
-		<td>cattail_in_global_in_F</td>
 		<td>cattail_in_global</td>
 		<td>in</td>
 
@@ -7374,7 +7186,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1150</td>
 		<td>Xiaomi Redmi 9C NFC</td>
-		<td>angelican_ru_global_global_F</td>
 		<td>angelican_ru_global</td>
 		<td>global</td>
 
@@ -7405,7 +7216,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1149</td>
 		<td>Xiaomi Redmi 9C NFC</td>
-		<td>angelican_eea_global_eea_F</td>
 		<td>angelican_eea_global</td>
 		<td>eea</td>
 
@@ -7436,7 +7246,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1148</td>
 		<td>Xiaomi Redmi 9C NFC</td>
-		<td>angelican_global_global_F</td>
 		<td>angelican_global</td>
 		<td>global</td>
 
@@ -7467,7 +7276,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1147</td>
 		<td>Xiaomi Redmi 9C</td>
-		<td>angelica_id_global_global_F</td>
 		<td>angelica_id_global</td>
 		<td>global</td>
 
@@ -7498,7 +7306,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1146</td>
 		<td>Xiaomi Redmi 9C</td>
-		<td>angelica_eea_global_eea_F</td>
 		<td>angelica_eea_global</td>
 		<td>eea</td>
 
@@ -7529,7 +7336,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1145</td>
 		<td>Xiaomi Redmi 9C</td>
-		<td>angelica_global_global_F</td>
 		<td>angelica_global</td>
 		<td>global</td>
 
@@ -7560,7 +7366,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1144</td>
 		<td>POCO X2</td>
-		<td>phoenixin_in_global_in_F</td>
 		<td>phoenixin_in_global</td>
 		<td>in</td>
 
@@ -7591,7 +7396,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1143</td>
 		<td>Xiaomi Redmi Note 8 Pro</td>
-		<td>begonia_in_global_in_F</td>
 		<td>begonia_in_global</td>
 		<td></td>
 
@@ -7622,7 +7426,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1142</td>
 		<td>POCO M2 Pro</td>
-		<td>gram_in_global_in_F</td>
 		<td>gram_in_global</td>
 		<td>in</td>
 
@@ -7653,7 +7456,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1141</td>
 		<td>POCO M2 Pro</td>
-		<td>gram_global_global_F</td>
 		<td>gram_global</td>
 		<td></td>
 
@@ -7684,7 +7486,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1140</td>
 		<td>Xiaomi Redmi 8A Pro</td>
-		<td>olivewood_id_global_global_F</td>
 		<td>olivewood_id_global</td>
 		<td>global</td>
 
@@ -7715,7 +7516,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1139</td>
 		<td>Xiaomi Redmi 9A</td>
-		<td>dandelion_id_global_global_F</td>
 		<td>dandelion_id_global</td>
 		<td>global</td>
 
@@ -7746,7 +7546,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1138</td>
 		<td>Xiaomi Redmi 9A</td>
-		<td>dandelion_in_global_in_F</td>
 		<td>dandelion_in_global</td>
 		<td>in</td>
 
@@ -7777,7 +7576,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1137</td>
 		<td>Xiaomi Redmi 9A</td>
-		<td>dandelion_ru_global_global_F</td>
 		<td>dandelion_ru_global</td>
 		<td>global</td>
 
@@ -7808,7 +7606,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1136</td>
 		<td>Xiaomi Redmi 9A</td>
-		<td>dandelion_eea_global_eea_F</td>
 		<td>dandelion_eea_global</td>
 		<td>eea</td>
 
@@ -7839,7 +7636,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1135</td>
 		<td>Xiaomi Redmi 9A</td>
-		<td>dandelion_global_global_F</td>
 		<td>dandelion_global</td>
 		<td>global</td>
 
@@ -7870,7 +7666,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1134</td>
 		<td>Xiaomi Mi 10 Lite 5G</td>
-		<td>monet_eea_global_eea_F</td>
 		<td>monet_eea_global</td>
 		<td>eea</td>
 
@@ -7901,7 +7696,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1133</td>
 		<td>Xiaomi Mi 10 Lite 5G</td>
-		<td>monet_global_global_F</td>
 		<td>monet_global</td>
 		<td>global</td>
 
@@ -7932,7 +7726,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1132</td>
 		<td>Xiaomi Mi Note 10 Pro</td>
-		<td>tucana_eea_global_eea_F</td>
 		<td>tucana_eea_global</td>
 		<td>eea</td>
 
@@ -7963,7 +7756,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1131</td>
 		<td>Xiaomi Mi Note 10 Pro</td>
-		<td>tucana_ru_global_global_F</td>
 		<td>tucana_ru_global</td>
 		<td>global</td>
 
@@ -7994,7 +7786,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1130</td>
 		<td>Xiaomi Mi Note 10 Pro</td>
-		<td>tucana_global_global_F</td>
 		<td>tucana_global</td>
 		<td>global</td>
 
@@ -8025,7 +7816,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1129</td>
 		<td>Xiaomi Mi Play</td>
-		<td>lotus_ru_global_global_F</td>
 		<td>lotus_ru_global</td>
 		<td>global</td>
 
@@ -8056,7 +7846,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1128</td>
 		<td>Xiaomi Mi Play</td>
-		<td>lotus_eea_global_eea_F</td>
 		<td>lotus_eea_global</td>
 		<td></td>
 
@@ -8087,7 +7876,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1127</td>
 		<td>Xiaomi Mi Play</td>
-		<td>lotus_global_global_F</td>
 		<td>lotus_global</td>
 		<td>global</td>
 
@@ -8118,7 +7906,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1126</td>
 		<td>Xiaomi Redmi 9</td>
-		<td>lancelot_id_global_global_F</td>
 		<td>lancelot_id_global</td>
 		<td>global</td>
 
@@ -8149,7 +7936,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1125</td>
 		<td>Xiaomi Redmi 9 Prime</td>
-		<td>lancelot_in_global_in_F</td>
 		<td>lancelot_in_global</td>
 		<td>in</td>
 
@@ -8180,7 +7966,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1124</td>
 		<td>Xiaomi Redmi 9</td>
-		<td>lancelot_ru_global_global_F</td>
 		<td>lancelot_ru_global</td>
 		<td>global</td>
 
@@ -8211,7 +7996,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1123</td>
 		<td>Xiaomi Redmi 9</td>
-		<td>lancelot_eea_global_eea_F</td>
 		<td>lancelot_eea_global</td>
 		<td>eea</td>
 
@@ -8242,7 +8026,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1122</td>
 		<td>Xiaomi Redmi 9</td>
-		<td>lancelot_global_global_F</td>
 		<td>lancelot_global</td>
 		<td>global</td>
 
@@ -8273,7 +8056,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1121</td>
 		<td>Xiaomi Redmi Note 8 Pro</td>
-		<td>begonia_id_global_global_F</td>
 		<td>begonia_id_global</td>
 		<td>global</td>
 
@@ -8304,7 +8086,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1120</td>
 		<td>Xiaomi Redmi Note 8 Pro</td>
-		<td>begonia_in_global_in_F</td>
 		<td>begonia_in_global</td>
 		<td></td>
 
@@ -8335,7 +8116,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1119</td>
 		<td>Xiaomi Redmi Note 8</td>
-		<td>ginkgo_id_global_global_F</td>
 		<td>ginkgo_id_global</td>
 		<td>global</td>
 
@@ -8366,7 +8146,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1118</td>
 		<td>Xiaomi Redmi Note 8</td>
-		<td>ginkgo_in_global_in_F</td>
 		<td>ginkgo_in_global</td>
 		<td>in</td>
 
@@ -8397,7 +8176,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1117</td>
 		<td>Xiaomi Mi Max 3</td>
-		<td>nitrogen_ru_global_global_F</td>
 		<td>nitrogen_ru_global</td>
 		<td>global</td>
 
@@ -8428,7 +8206,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1116</td>
 		<td>Xiaomi Mi Max 3</td>
-		<td>nitrogen_global_global_F</td>
 		<td>nitrogen_global</td>
 		<td>global</td>
 
@@ -8459,7 +8236,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1115</td>
 		<td>Xiaomi Mi A3</td>
-		<td>laurel_sprout_eea_global_eea_F</td>
 		<td>laurel_sprout_eea_global</td>
 		<td></td>
 
@@ -8490,7 +8266,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1114</td>
 		<td>Xiaomi Redmi Go</td>
-		<td>tiare_ru_global_global_F</td>
 		<td>tiare_ru_global</td>
 		<td></td>
 
@@ -8521,7 +8296,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1113</td>
 		<td>Xiaomi Redmi Go</td>
-		<td>tiare_eea_global_eea_F</td>
 		<td>tiare_eea_global</td>
 		<td></td>
 
@@ -8552,7 +8326,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1112</td>
 		<td>Xiaomi Redmi Go</td>
-		<td>tiare_in_global_in_F</td>
 		<td>tiare_in_global</td>
 		<td></td>
 
@@ -8583,7 +8356,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1111</td>
 		<td>Xiaomi Redmi Go</td>
-		<td>tiare_global__F</td>
 		<td>tiare_global</td>
 		<td></td>
 
@@ -8614,7 +8386,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1110</td>
 		<td>Xiaomi Mi A3</td>
-		<td>laurel_sprout_global__F</td>
 		<td>laurel_sprout_global</td>
 		<td></td>
 
@@ -8645,7 +8416,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1109</td>
 		<td>Xiaomi Mi A2 Lite</td>
-		<td>daisy_global__F</td>
 		<td>daisy_global</td>
 		<td></td>
 
@@ -8676,7 +8446,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1108</td>
 		<td>Xiaomi Mi A2</td>
-		<td>jasmine_global__F</td>
 		<td>jasmine_global</td>
 		<td></td>
 
@@ -8707,7 +8476,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1107</td>
 		<td>Xiaomi Mi A1</td>
-		<td>tissot_global__F</td>
 		<td>tissot_global</td>
 		<td></td>
 
@@ -8738,7 +8506,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1105</td>
 		<td>Xiaomi Redmi Note 9</td>
-		<td>merlin_ru_global_global_F</td>
 		<td>merlin_ru_global</td>
 		<td>global</td>
 
@@ -8769,7 +8536,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1104</td>
 		<td>Xiaomi Redmi Note 9</td>
-		<td>merlin_in_global_in_F</td>
 		<td>merlin_in_global</td>
 		<td>in</td>
 
@@ -8800,7 +8566,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1103</td>
 		<td>POCO F2 Pro</td>
-		<td>lmi_ru_global_global_F</td>
 		<td>lmi_ru_global</td>
 		<td>global</td>
 
@@ -8831,7 +8596,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1102</td>
 		<td>POCO F2 Pro</td>
-		<td>lmi_id_global_global_F</td>
 		<td>lmi_id_global</td>
 		<td>global</td>
 
@@ -8862,7 +8626,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1101</td>
 		<td>POCO F2 Pro</td>
-		<td>lmi_eea_global_eea_F</td>
 		<td>lmi_eea_global</td>
 		<td>eea</td>
 
@@ -8893,7 +8656,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1100</td>
 		<td>POCO F2 Pro</td>
-		<td>lmi_in_global_in_F</td>
 		<td>lmi_in_global</td>
 		<td></td>
 
@@ -8924,7 +8686,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1099</td>
 		<td>POCO F2 Pro</td>
-		<td>lmi_global_global_F</td>
 		<td>lmi_global</td>
 		<td>global</td>
 
@@ -8955,7 +8716,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1098</td>
 		<td>Xiaomi Mi Note 10 Lite</td>
-		<td>toco_ru_global_global_F</td>
 		<td>toco_ru_global</td>
 		<td>global</td>
 
@@ -8986,7 +8746,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1097</td>
 		<td>Xiaomi Mi Note 10 Lite</td>
-		<td>toco_ru_global_global_F</td>
 		<td>toco_ru_global</td>
 		<td>global</td>
 
@@ -9017,7 +8776,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1096</td>
 		<td>Xiaomi Mi Note 10 Lite</td>
-		<td>toco_eea_global_eea_F</td>
 		<td>toco_eea_global</td>
 		<td>eea</td>
 
@@ -9048,7 +8806,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1095</td>
 		<td>Xiaomi Mi Note 10 Lite</td>
-		<td>tocoin_in_global_in_F</td>
 		<td>tocoin_in_global</td>
 		<td></td>
 
@@ -9079,7 +8836,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1094</td>
 		<td>Xiaomi Mi Note 10 Lite</td>
-		<td>toco_global_global_F</td>
 		<td>toco_global</td>
 		<td>global</td>
 
@@ -9110,7 +8866,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1093</td>
 		<td>Xiaomi Redmi Note 9</td>
-		<td>merlin_eea_global_eea_F</td>
 		<td>merlin_eea_global</td>
 		<td>eea</td>
 
@@ -9141,7 +8896,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1092</td>
 		<td>Xiaomi Redmi Note 9</td>
-		<td>merlin_global_global_F</td>
 		<td>merlin_global</td>
 		<td>global</td>
 
@@ -9172,7 +8926,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1091</td>
 		<td>Xiaomi Redmi Note 9</td>
-		<td>merlin_id_global_global_F</td>
 		<td>merlin_id_global</td>
 		<td>global</td>
 
@@ -9203,7 +8956,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1090</td>
 		<td>Xiaomi Redmi Note 9 Pro</td>
-		<td>joyeuse_ru_global_global_F</td>
 		<td>joyeuse_ru_global</td>
 		<td>global</td>
 
@@ -9234,7 +8986,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1089</td>
 		<td>Xiaomi Redmi Note 9 Pro</td>
-		<td>joyeuse_eea_global_eea_F</td>
 		<td>joyeuse_eea_global</td>
 		<td>eea</td>
 
@@ -9265,7 +9016,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1088</td>
 		<td>Xiaomi Redmi Note 9 Pro</td>
-		<td>joyeuse_global_global_F</td>
 		<td>joyeuse_global</td>
 		<td>global</td>
 
@@ -9296,7 +9046,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1087</td>
 		<td>Xiaomi Mi 10 Pro</td>
-		<td>cmi_in_global_in_F</td>
 		<td>cmi_in_global</td>
 		<td></td>
 
@@ -9327,7 +9076,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1086</td>
 		<td>Xiaomi Mi 10 Pro</td>
-		<td>cmi_eea_global_eea_F</td>
 		<td>cmi_eea_global</td>
 		<td>eea</td>
 
@@ -9358,7 +9106,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1085</td>
 		<td>Xiaomi Mi 10 Pro</td>
-		<td>cmi_global_global_F</td>
 		<td>cmi_global</td>
 		<td>global</td>
 
@@ -9389,7 +9136,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1084</td>
 		<td>Xiaomi Mi 10</td>
-		<td>umi_id_global_global_F</td>
 		<td>umi_id_global</td>
 		<td>global</td>
 
@@ -9420,7 +9166,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1083</td>
 		<td>Xiaomi Mi 10</td>
-		<td>umi_ru_global_global_F</td>
 		<td>umi_ru_global</td>
 		<td>global</td>
 
@@ -9451,7 +9196,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1082</td>
 		<td>Xiaomi Mi 10</td>
-		<td>umi_in_global_in_F</td>
 		<td>umi_in_global</td>
 		<td>in</td>
 
@@ -9482,7 +9226,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1081</td>
 		<td>Xiaomi Mi 10</td>
-		<td>umi_eea_global_eea_F</td>
 		<td>umi_eea_global</td>
 		<td>eea</td>
 
@@ -9513,7 +9256,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1080</td>
 		<td>Xiaomi Mi 10</td>
-		<td>umi_global_global_F</td>
 		<td>umi_global</td>
 		<td>global</td>
 
@@ -9544,7 +9286,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1079</td>
 		<td>Xiaomi Redmi Note 9S</td>
-		<td>curtana_eea_global_eea_F</td>
 		<td>curtana_eea_global</td>
 		<td>eea</td>
 
@@ -9575,7 +9316,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1078</td>
 		<td>Xiaomi Redmi Note 9S</td>
-		<td>curtana_ru_global_global_F</td>
 		<td>curtana_ru_global</td>
 		<td>global</td>
 
@@ -9606,7 +9346,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1077</td>
 		<td>Xiaomi Redmi Note 9S</td>
-		<td>curtana_in_global_in_F</td>
 		<td>curtana_in_global</td>
 		<td>in</td>
 
@@ -9637,7 +9376,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1076</td>
 		<td>Xiaomi Redmi Note 9S</td>
-		<td>curtana_global_global_F</td>
 		<td>curtana_global</td>
 		<td>global</td>
 
@@ -9668,7 +9406,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1075</td>
 		<td>Xiaomi Mi 8 Pro</td>
-		<td>equuleus_ru_global_global_F</td>
 		<td>equuleus_ru_global</td>
 		<td>global</td>
 
@@ -9699,7 +9436,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1074</td>
 		<td>Xiaomi Mi 8 Pro</td>
-		<td>equuleus_global_global_F</td>
 		<td>equuleus_global</td>
 		<td>global</td>
 
@@ -9730,7 +9466,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1073</td>
 		<td>Xiaomi Redmi Note 6 Pro</td>
-		<td>tulip_ru_global_global_F</td>
 		<td>tulip_ru_global</td>
 		<td>global</td>
 
@@ -9761,7 +9496,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1072</td>
 		<td>Xiaomi Redmi Note 6 Pro</td>
-		<td>tulip_global_global_F</td>
 		<td>tulip_global</td>
 		<td>global</td>
 
@@ -9792,7 +9526,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1071</td>
 		<td>Xiaomi Redmi Note 8T</td>
-		<td>willow_in_global_in_F</td>
 		<td>willow_in_global</td>
 		<td></td>
 
@@ -9823,7 +9556,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1070</td>
 		<td>Xiaomi Redmi Note 8T</td>
-		<td>willow_ru_global_global_F</td>
 		<td>willow_ru_global</td>
 		<td>global</td>
 
@@ -9854,7 +9586,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1069</td>
 		<td>Xiaomi Redmi Note 8T</td>
-		<td>willow_eea_global_eea_F</td>
 		<td>willow_eea_global</td>
 		<td>eea</td>
 
@@ -9885,7 +9616,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1068</td>
 		<td>Xiaomi Redmi Note 8T</td>
-		<td>willow_global_global_F</td>
 		<td>willow_global</td>
 		<td>global</td>
 
@@ -9916,7 +9646,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1067</td>
 		<td>Xiaomi Mi Note 10</td>
-		<td>tucana_global_global_F</td>
 		<td>tucana_global</td>
 		<td>global</td>
 
@@ -9947,7 +9676,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1065</td>
 		<td>Xiaomi Mi Note 10</td>
-		<td>tucana_ru_global_global_F</td>
 		<td>tucana_ru_global</td>
 		<td>global</td>
 
@@ -9978,7 +9706,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1064</td>
 		<td>Xiaomi Mi Note 10</td>
-		<td>tucana_eea_global_eea_F</td>
 		<td>tucana_eea_global</td>
 		<td>eea</td>
 
@@ -10009,7 +9736,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1063</td>
 		<td>Xiaomi Redmi 8A</td>
-		<td>olivelite_id_global_global_F</td>
 		<td>olivelite_id_global</td>
 		<td>global</td>
 
@@ -10040,7 +9766,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1062</td>
 		<td>Xiaomi Redmi 8A</td>
-		<td>olivelite_in_global_in_F</td>
 		<td>olivelite_in_global</td>
 		<td>in</td>
 
@@ -10071,7 +9796,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1061</td>
 		<td>Xiaomi Redmi 8A</td>
-		<td>olivelite_ru_global_global_F</td>
 		<td>olivelite_ru_global</td>
 		<td>global</td>
 
@@ -10102,7 +9826,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1060</td>
 		<td>Xiaomi Redmi 8A</td>
-		<td>olivelite_eea_global_eea_F</td>
 		<td>olivelite_eea_global</td>
 		<td>eea</td>
 
@@ -10133,7 +9856,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1059</td>
 		<td>Xiaomi Redmi 8A</td>
-		<td>olivelite_global_global_F</td>
 		<td>olivelite_global</td>
 		<td>global</td>
 
@@ -10164,7 +9886,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1058</td>
 		<td>Xiaomi Redmi 8</td>
-		<td>olive_id_global_global_F</td>
 		<td>olive_id_global</td>
 		<td>global</td>
 
@@ -10195,7 +9916,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1057</td>
 		<td>Xiaomi Redmi 8</td>
-		<td>olive_in_global_in_F</td>
 		<td>olive_in_global</td>
 		<td>in</td>
 
@@ -10226,7 +9946,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1056</td>
 		<td>Xiaomi Redmi 8</td>
-		<td>olive_ru_global_global_F</td>
 		<td>olive_ru_global</td>
 		<td>global</td>
 
@@ -10257,7 +9976,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1055</td>
 		<td>Xiaomi Redmi 8</td>
-		<td>olive_eea_global_eea_F</td>
 		<td>olive_eea_global</td>
 		<td>eea</td>
 
@@ -10288,7 +10006,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1054</td>
 		<td>Xiaomi Redmi 8</td>
-		<td>olive_global_global_F</td>
 		<td>olive_global</td>
 		<td>global</td>
 
@@ -10319,7 +10036,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1053</td>
 		<td>Xiaomi Redmi Note 8</td>
-		<td>ginkgo_global_global_F</td>
 		<td>ginkgo_global</td>
 		<td>global</td>
 
@@ -10350,7 +10066,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1052</td>
 		<td>Xiaomi Redmi Note 8 Pro</td>
-		<td>begonia_ru_global_global_F</td>
 		<td>begonia_ru_global</td>
 		<td>global</td>
 
@@ -10381,7 +10096,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1051</td>
 		<td>Xiaomi Redmi Note 8 Pro</td>
-		<td>begonia_eea_global_eea_F</td>
 		<td>begonia_eea_global</td>
 		<td>eea</td>
 
@@ -10412,7 +10126,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1050</td>
 		<td>Xiaomi Redmi Note 8 Pro</td>
-		<td>begonia_global_global_F</td>
 		<td>begonia_global</td>
 		<td>global</td>
 
@@ -10443,7 +10156,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1049</td>
 		<td>Xiaomi Mi 9 Lite</td>
-		<td>pyxis_eea_global_eea_F</td>
 		<td>pyxis_eea_global</td>
 		<td>eea</td>
 
@@ -10474,7 +10186,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1048</td>
 		<td>Xiaomi Mi 9 Lite</td>
-		<td>pyxis_ru_global_global_F</td>
 		<td>pyxis_ru_global</td>
 		<td>global</td>
 
@@ -10505,7 +10216,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1047</td>
 		<td>Xiaomi Mi 9 Lite</td>
-		<td>pyxis_global_global_F</td>
 		<td>pyxis_global</td>
 		<td>global</td>
 
@@ -10536,7 +10246,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1046</td>
 		<td>Xiaomi Mi 9T Pro</td>
-		<td>raphael_global_global_F</td>
 		<td>raphael_global</td>
 		<td>global</td>
 
@@ -10567,7 +10276,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1045</td>
 		<td>Xiaomi Mi 9T Pro</td>
-		<td>raphael_ru_global_global_F</td>
 		<td>raphael_ru_global</td>
 		<td>global</td>
 
@@ -10598,7 +10306,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1044</td>
 		<td>Xiaomi Mi 9T Pro</td>
-		<td>raphael_eea_global_eea_F</td>
 		<td>raphael_eea_global</td>
 		<td>eea</td>
 
@@ -10629,7 +10336,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1043</td>
 		<td>Redmi Y3</td>
-		<td>onc_in_global_in_F</td>
 		<td>onc_in_global</td>
 		<td>in</td>
 
@@ -10660,7 +10366,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1042</td>
 		<td>Redmi 7</td>
-		<td>onclite_ru_global_global_F</td>
 		<td>onclite_ru_global</td>
 		<td>global</td>
 
@@ -10691,7 +10396,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1041</td>
 		<td>Redmi 7</td>
-		<td>onclite_in_global_in_F</td>
 		<td>onclite_in_global</td>
 		<td>in</td>
 
@@ -10722,7 +10426,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1040</td>
 		<td>Redmi 7</td>
-		<td>onclite_eea_global_eea_F</td>
 		<td>onclite_eea_global</td>
 		<td>eea</td>
 
@@ -10753,7 +10456,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1039</td>
 		<td>Redmi 7</td>
-		<td>onclite_global_global_F</td>
 		<td>onclite_global</td>
 		<td>global</td>
 
@@ -10784,7 +10486,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1038</td>
 		<td>Xiaomi Mi MIX 3 5G</td>
-		<td>andromeda_eea_global_eea_F</td>
 		<td>andromeda_eea_global</td>
 		<td>eea</td>
 
@@ -10815,7 +10516,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1037</td>
 		<td>Xiaomi Mi MIX3 5G</td>
-		<td>andromeda_global_global_F</td>
 		<td>andromeda_global</td>
 		<td>global</td>
 
@@ -10846,7 +10546,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1036</td>
 		<td>Xiaomi Mi MIX 3</td>
-		<td>perseus_ru_global_global_F</td>
 		<td>perseus_ru_global</td>
 		<td>global</td>
 
@@ -10877,7 +10576,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1035</td>
 		<td>Redmi 7A</td>
-		<td>pine_eea_global_eea_F</td>
 		<td>pine_eea_global</td>
 		<td>eea</td>
 
@@ -10908,7 +10606,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1034</td>
 		<td>Redmi 7A</td>
-		<td>pine_ru_global_global_F</td>
 		<td>pine_ru_global</td>
 		<td>global</td>
 
@@ -10939,7 +10636,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1033</td>
 		<td>Redmi 7A</td>
-		<td>pine_global_global_F</td>
 		<td>pine_global</td>
 		<td>global</td>
 
@@ -10970,7 +10666,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1032</td>
 		<td>POCO F1</td>
-		<td>beryllium_global_global_F</td>
 		<td>beryllium_global</td>
 		<td>global</td>
 
@@ -11001,7 +10696,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1031</td>
 		<td>Xiaomi Mi 3/4</td>
-		<td>cancro_global_global_F</td>
 		<td>cancro_global</td>
 		<td>global</td>
 
@@ -11032,7 +10726,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1030</td>
 		<td>Redmi K20 Pro</td>
-		<td>raphaelin_in_global_in_F</td>
 		<td>raphaelin_in_global</td>
 		<td>in</td>
 
@@ -11063,7 +10756,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1029</td>
 		<td>Redmi K20</td>
-		<td>davinciin_in_global_in_F</td>
 		<td>davinciin_in_global</td>
 		<td>in</td>
 
@@ -11094,7 +10786,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1028</td>
 		<td>Xiaomi Mi 9T</td>
-		<td>davinci_eea_global_eea_F</td>
 		<td>davinci_eea_global</td>
 		<td>eea</td>
 
@@ -11125,7 +10816,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1027</td>
 		<td>Xiaomi Mi 9T</td>
-		<td>davinci_ru_global_global_F</td>
 		<td>davinci_ru_global</td>
 		<td>global</td>
 
@@ -11156,7 +10846,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1026</td>
 		<td>Xiaomi Mi 9T</td>
-		<td>davinci_global_global_F</td>
 		<td>davinci_global</td>
 		<td>global</td>
 
@@ -11187,7 +10876,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1025</td>
 		<td>Xiaomi Mi 2/2S</td>
-		<td>aries_global_global_F</td>
 		<td>aries_global</td>
 		<td>global</td>
 
@@ -11218,7 +10906,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1024</td>
 		<td>Redmi 6 Pro</td>
-		<td>sakura_india_global_in_F</td>
 		<td>sakura_india_global</td>
 		<td>global</td>
 
@@ -11249,7 +10936,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1023</td>
 		<td>Redmi 6A</td>
-		<td>cactus_global_global_F</td>
 		<td>cactus_global</td>
 		<td>global</td>
 
@@ -11280,7 +10966,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1022</td>
 		<td>Redmi 6</td>
-		<td>cereus_global_global_F</td>
 		<td>cereus_global</td>
 		<td>global</td>
 
@@ -11311,7 +10996,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>68</td>
 		<td>Redmi 5A</td>
-		<td>riva_global_global_F</td>
 		<td>riva_global</td>
 		<td>global</td>
 
@@ -11342,7 +11026,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>66</td>
 		<td>Redmi 4A</td>
-		<td>rolex_global_global_F</td>
 		<td>rolex_global</td>
 		<td>global</td>
 
@@ -11373,7 +11056,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>64</td>
 		<td>Mi Max 2</td>
-		<td>oxygen_global_global_F</td>
 		<td>oxygen_global</td>
 		<td>global</td>
 
@@ -11404,7 +11086,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>62</td>
 		<td>Mi Max Prime</td>
-		<td>helium_global_global_F</td>
 		<td>helium_global</td>
 		<td>global</td>
 
@@ -11435,7 +11116,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>60</td>
 		<td>Mi Max</td>
-		<td>hydrogen_global_global_F</td>
 		<td>hydrogen_global</td>
 		<td>global</td>
 
@@ -11466,7 +11146,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>59</td>
 		<td>Redmi 5 Plus</td>
-		<td>vince_global_global_X</td>
 		<td>vince_global</td>
 		<td>global</td>
 
@@ -11497,7 +11176,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>58</td>
 		<td>Redmi 5 Plus</td>
-		<td>vince_global_global_F</td>
 		<td>vince_global</td>
 		<td>global</td>
 
@@ -11528,7 +11206,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>57</td>
 		<td>Redmi 5</td>
-		<td>rosy_ru_global_global_F</td>
 		<td>rosy_ru_global</td>
 		<td>global</td>
 
@@ -11559,7 +11236,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>55</td>
 		<td>Redmi 5</td>
-		<td>rosy_global_global_F</td>
 		<td>rosy_global</td>
 		<td>global</td>
 
@@ -11590,7 +11266,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>53</td>
 		<td>Redmi Note 5A Prime</td>
-		<td>ugg_global_global_F</td>
 		<td>ugg_global</td>
 		<td>global</td>
 
@@ -11621,7 +11296,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>51</td>
 		<td>Redmi Note 5A</td>
-		<td>ugglite_global_global_F</td>
 		<td>ugglite_global</td>
 		<td>global</td>
 
@@ -11652,7 +11326,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>49</td>
 		<td>Redmi 4X</td>
-		<td>santoni_global_global_F</td>
 		<td>santoni_global</td>
 		<td>global</td>
 
@@ -11683,7 +11356,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>47</td>
 		<td>Xiaomi Mi 5s Plus</td>
-		<td>natrium_global_global_F</td>
 		<td>natrium_global</td>
 		<td>global</td>
 
@@ -11714,7 +11386,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>45</td>
 		<td>Xiaomi Mi 5s</td>
-		<td>capricorn_global_global_F</td>
 		<td>capricorn_global</td>
 		<td>global</td>
 
@@ -11745,7 +11416,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>43</td>
 		<td>Redmi Note 4X</td>
-		<td>mido_global_global_F</td>
 		<td>mido_global</td>
 		<td>global</td>
 
@@ -11776,7 +11446,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>41</td>
 		<td>Xiaomi Mi Note 2</td>
-		<td>scorpio_global_global_F</td>
 		<td>scorpio_global</td>
 		<td>global</td>
 
@@ -11807,7 +11476,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>39</td>
 		<td>Xiaomi Mi 5</td>
-		<td>gemini_global_global_F</td>
 		<td>gemini_global</td>
 		<td>global</td>
 
@@ -11838,7 +11506,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>38</td>
 		<td>Redmi Note 7 Pro</td>
-		<td>violet_in_global_in_F</td>
 		<td>violet_in_global</td>
 		<td>in</td>
 
@@ -11869,7 +11536,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>37</td>
 		<td>Redmi Note 7</td>
-		<td>lavender_ru_global_global_F</td>
 		<td>lavender_ru_global</td>
 		<td>global</td>
 
@@ -11900,7 +11566,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>36</td>
 		<td>Redmi Note 7</td>
-		<td>lavender_global_global_F</td>
 		<td>lavender_global</td>
 		<td>global</td>
 
@@ -11931,7 +11596,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>35</td>
 		<td>Redmi Note 7</td>
-		<td>lavender_in_global_in_F</td>
 		<td>lavender_in_global</td>
 		<td>in</td>
 
@@ -11962,7 +11626,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>34</td>
 		<td>Redmi Note 7</td>
-		<td>lavender_eea_global_eea_F</td>
 		<td>lavender_eea_global</td>
 		<td>eea</td>
 
@@ -11993,7 +11656,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>32</td>
 		<td>Redmi Note 5 Pro</td>
-		<td>whyred_global_global_F</td>
 		<td>whyred_global</td>
 		<td>global</td>
 
@@ -12024,7 +11686,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>30</td>
 		<td>Redmi Note 5</td>
-		<td>whyred_ru_global_global_F</td>
 		<td>whyred_ru_global</td>
 		<td>global</td>
 
@@ -12055,7 +11716,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>29</td>
 		<td>Redmi Note 5</td>
-		<td>whyred_global_global_F</td>
 		<td>whyred_global</td>
 		<td>global</td>
 
@@ -12086,7 +11746,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>27</td>
 		<td>Redmi S2</td>
-		<td>ysl_global_in_F</td>
 		<td>ysl_global</td>
 		<td>in</td>
 
@@ -12117,7 +11776,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>26</td>
 		<td>Redmi S2</td>
-		<td>ysl_ru_global_global_F</td>
 		<td>ysl_ru_global</td>
 		<td>global</td>
 
@@ -12148,7 +11806,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>25</td>
 		<td>Redmi S2</td>
-		<td>ysl_global_global_F</td>
 		<td>ysl_global</td>
 		<td>global</td>
 
@@ -12179,7 +11836,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>24</td>
 		<td>Xiaomi Mi MIX 3</td>
-		<td>perseus_global_global_F</td>
 		<td>perseus_global</td>
 		<td>global</td>
 
@@ -12210,7 +11866,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>22</td>
 		<td>Xiaomi Mi MIX 2S</td>
-		<td>polaris_ru_global_global_F</td>
 		<td>polaris_ru_global</td>
 		<td>global</td>
 
@@ -12241,7 +11896,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>21</td>
 		<td>Xiaomi Mi MIX 2S</td>
-		<td>polaris_global_global_F</td>
 		<td>polaris_global</td>
 		<td>global</td>
 
@@ -12272,7 +11926,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>20</td>
 		<td>Xiaomi Mi 9 SE</td>
-		<td>grus_eea_global_eea_F</td>
 		<td>grus_eea_global</td>
 		<td>eea</td>
 
@@ -12303,7 +11956,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>19</td>
 		<td>Xiaomi Mi 9 SE</td>
-		<td>grus_global_global_F</td>
 		<td>grus_global</td>
 		<td>global</td>
 
@@ -12334,7 +11986,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>18</td>
 		<td>Xiaomi Mi 9</td>
-		<td>cepheus_ru_global_global_F</td>
 		<td>cepheus_ru_global</td>
 		<td>global</td>
 
@@ -12365,7 +12016,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>17</td>
 		<td>Xiaomi Mi 9</td>
-		<td>cepheus_eea_global_eea_F</td>
 		<td>cepheus_eea_global</td>
 		<td>eea</td>
 
@@ -12396,7 +12046,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>16</td>
 		<td>Xiaomi Mi 9</td>
-		<td>cepheus_global_global_F</td>
 		<td>cepheus_global</td>
 		<td>global</td>
 
@@ -12427,7 +12076,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>14</td>
 		<td>Xiaomi Mi 8 Lite</td>
-		<td>platina_ru_global_global_F</td>
 		<td>platina_ru_global</td>
 		<td>global</td>
 
@@ -12458,7 +12106,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>12</td>
 		<td>Xiaomi Mi 8 Lite</td>
-		<td>platina_global_global_F</td>
 		<td>platina_global</td>
 		<td>global</td>
 
@@ -12489,7 +12136,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>11</td>
 		<td>Xiaomi Mi 8</td>
-		<td>dipper_ru_global_global_F</td>
 		<td>dipper_ru_global</td>
 		<td>global</td>
 
@@ -12520,7 +12166,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>8</td>
 		<td>Xiaomi Mi 8</td>
-		<td>dipper_global_global_F</td>
 		<td>dipper_global</td>
 		<td>global</td>
 
@@ -12551,7 +12196,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>5</td>
 		<td>Xiaomi Mi MIX 2</td>
-		<td>chiron_global_global_F</td>
 		<td>chiron_global</td>
 		<td>global</td>
 
@@ -12582,7 +12226,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>3</td>
 		<td>Xiaomi Mi MIX</td>
-		<td>lithium_global_global_F</td>
 		<td>lithium_global</td>
 		<td>global</td>
 
@@ -12613,7 +12256,6 @@ Tip: Sort multiple columns by holding down the <kbd>Shift</kbd> key and clicking
 	<tr>
 		<td>1</td>
 		<td>Xiaomi Mi 6</td>
-		<td>sagit_global_global_F</td>
 		<td>sagit_global</td>
 		<td>global</td>
 
@@ -12653,10 +12295,14 @@ $(function() {
 
 		theme : 'blue',
 
+		// change the multi sort key from the default shift to alt button
+		sortMultiSortKey : 'ctrlKey',
+		sortResetKey : 'altKey',
+
 		// initial sort columns where columnIndex is a zero-based index for your columns left-to-right and
 		// sortDirection is 0 for Ascending and 1 for Descending.
-		// sortList: [[5,1],[3,0],[1,0]],
-		// sortList: [[15,1],[3,0],[1,0]],
+		// sortList: [[4,1],[2,0],[0,0]],
+		// sortList: [[14,1],[2,0],[0,0]],
 
 		// widget code contained in the jquery.tablesorter.widgets.js file
 		// use the zebra stripe widget if you plan on hiding any rows (filter widget)
@@ -12673,8 +12319,8 @@ $(function() {
 
 <pre>
 Author  : Sappurit
-Updated : 03-Aug-2022 20:48:25
-Total   : 402
+Updated : 04-Aug-2022 00:16:57
+Total   : 403
 </pre>
 </body>
 </html>

@@ -6,10 +6,11 @@
 <meta name="viewport" content="width=device-width" />
 <link rel="icon" type="image/png" href="icon.png" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" />
-<link rel="stylesheet" href="theme.blue.min.css">
-<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="jquery.tablesorter.min.js"></script>
-<script type="text/javascript" src="jquery.tablesorter.widgets.min.js"></script>
+<link rel="stylesheet" href="css/theme.blue.css">
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.widgets.min.js"></script>
+<script type="text/javascript" src="js/widget-cssStickyHeaders.min.js"></script>
 <style>
 #title     { border: 0px solid red;  padding: 0px; margin: 20px 0;      width: 1200px; font: bold   36px 'Roboto'; color: #000000; }
 #text      { border: 0px solid blue; padding: 0px; margin-bottom: 20px; width: 1200px; font: normal 16px 'Roboto'; color: #000000; }
@@ -18,7 +19,7 @@
 #content   { border: 0px solid blue; padding: 0px; width: 2200px; }
 
 kbd        { border: 1px solid #000; padding: 1px 2px; border-radius: 3px; }
-kbd.tt     { cursor: pointer; }
+
 
 #myTable                                                 { width: fit-content; }
 #myTable a                                               { text-decoration: none; color: #000000; }
@@ -90,7 +91,8 @@ kbd.tt     { cursor: pointer; }
 #myTable tbody tr.even:hover td:nth-of-type(n+19):nth-of-type(-n+23)     { background: #e8f5e9; }
 
 
-.tt { position: relative; }
+.tt       { position: relative; cursor: pointer; }
+
 
 .tt:hover:after
 {
@@ -211,6 +213,122 @@ Tip: Sort multiple columns by holding down the <kbd>Ctrl</kbd> key and clicking 
 </tr>
 </thead>
 <tbody>
+	<tr>
+		<td>Redmi Note 11 Pro</td>
+		<td>viva_global</td>
+		<td>global</td>
+
+		<td>2022-06-28</td>
+		<td>F</td>
+		<td>V13.0.11.0.RGDMIXM</td>
+		<td>11.0</td>
+		<td><kbd>FULLROM</kbd> <a href="https://bigota.d.miui.com/V13.0.11.0.RGDMIXM/viva_global_images_V13.0.11.0.RGDMIXM_20220610.0000.00_11.0_global_a4c653473f.tgz"><kbd class="tt" data-tt="viva_global_images_V13.0.11.0.RGDMIXM_20220610.0000.00_11.0_global_a4c653473f.tgz">TGZ</kbd></a> <kbd class="tt" data-tt="a4c653473f1e19a8344efab0b419a619">MD5</kbd> <kbd>5.4G</kbd> </td>
+
+		<td>2022-06-16</td>
+		<td>F</td>
+		<td>V13.0.11.0.RGDMIXM</td>
+		<td>11.0</td>
+		<td><kbd>ROM</kbd> <a href="https://bigota.d.miui.com/V13.0.11.0.RGDMIXM/miui_VIVAGlobal_V13.0.11.0.RGDMIXM_7615f9e016_11.0.zip"><kbd class="tt" data-tt="miui_VIVAGlobal_V13.0.11.0.RGDMIXM_7615f9e016_11.0.zip">ZIP</kbd></a> <kbd class="tt" data-tt="7615f9e016f3635382ae0a620cec32f8">MD5</kbd> <kbd>2.6G</kbd> <kbd class="tt" data-js='{"System":{"txt":["Updated Android Security Patch to June 2022. Increased system security."]}}'>LOG</kbd></td>
+
+		<td>2022-08-02</td>
+		<td>F</td>
+		<td>V13.0.2.0.SGDMIXM</td>
+		<td>12.0</td>
+		<td><kbd>ROM</kbd> <a href="https://bigota.d.miui.com/V13.0.2.0.SGDMIXM/miui_VIVAGlobal_V13.0.2.0.SGDMIXM_02e21fe2be_12.0.zip"><kbd class="tt" data-tt="miui_VIVAGlobal_V13.0.2.0.SGDMIXM_02e21fe2be_12.0.zip">ZIP</kbd></a> <kbd class="tt" data-tt="02e21fe2beae02909eba8d353cebf875">MD5</kbd> <kbd>2.8G</kbd> <kbd class="tt" data-js='{"System":{"txt":["Updated Android Security Patch to July 2022. Increased system security.","Stable MIUI based on Android 12"]}}'>LOG</kbd></td>
+
+		<td>2022-08-02</td>
+		<td>F</td>
+		<td>V13.0.2.0.SGDMIXM</td>
+		<td>12.0</td>
+		<td><kbd>OTA</kbd> <a href="https://bigota.d.miui.com/V13.0.2.0.SGDMIXM/miui_VIVAGlobal_V13.0.2.0.SGDMIXM_02e21fe2be_12.0.zip"><kbd class="tt" data-tt="miui_VIVAGlobal_V13.0.2.0.SGDMIXM_02e21fe2be_12.0.zip">ZIP</kbd></a> <kbd class="tt" data-tt="02e21fe2beae02909eba8d353cebf875">MD5</kbd> <kbd>2.8G</kbd> <kbd class="tt" data-js='{"System":{"txt":["Updated Android Security Patch to July 2022. Increased system security.","Stable MIUI based on Android 12"]}}'>LOG</kbd></td>
+	</tr>
+	<tr>
+		<td>Xiaomi Redmi 9</td>
+		<td>lancelot_ru_global</td>
+		<td>global</td>
+
+		<td>2022-08-04</td>
+		<td>F</td>
+		<td>V12.5.5.0.RJCRUXM</td>
+		<td>11.0</td>
+		<td><kbd>FULLROM</kbd> <a href="https://bigota.d.miui.com/V12.5.5.0.RJCRUXM/lancelot_ru_global_images_V12.5.5.0.RJCRUXM_20220719.0000.00_11.0_global_a4f112b394.tgz"><kbd class="tt" data-tt="lancelot_ru_global_images_V12.5.5.0.RJCRUXM_20220719.0000.00_11.0_global_a4f112b394.tgz">TGZ</kbd></a> <kbd class="tt" data-tt="a4f112b394e30a10a809d84d1b2fbac8">MD5</kbd> <kbd>3.6G</kbd> </td>
+
+		<td>2022-07-26</td>
+		<td>F</td>
+		<td>V12.5.5.0.RJCRUXM</td>
+		<td>11.0</td>
+		<td><kbd>ROM</kbd> <a href="https://bigota.d.miui.com/V12.5.5.0.RJCRUXM/miui_LANCELOTRUGlobal_V12.5.5.0.RJCRUXM_7cc10daa65_11.0.zip"><kbd class="tt" data-tt="miui_LANCELOTRUGlobal_V12.5.5.0.RJCRUXM_7cc10daa65_11.0.zip">ZIP</kbd></a> <kbd class="tt" data-tt="7cc10daa65edd071e3e8287a1467e033">MD5</kbd> <kbd>2.2G</kbd> <kbd class="tt" data-js='{"System":{"txt":["Updated Android Security Patch to June 2022. Increased system security."]}}'>LOG</kbd></td>
+
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Xiaomi Redmi 9 Prime</td>
+		<td>lancelot_in_global</td>
+		<td>in</td>
+
+		<td>2022-08-04</td>
+		<td>F</td>
+		<td>V12.5.5.0.RJCINXM</td>
+		<td>11.0</td>
+		<td><kbd>FULLROM</kbd> <a href="https://bigota.d.miui.com/V12.5.5.0.RJCINXM/lancelot_in_global_images_V12.5.5.0.RJCINXM_20220719.0000.00_11.0_in_8b23edcd24.tgz"><kbd class="tt" data-tt="lancelot_in_global_images_V12.5.5.0.RJCINXM_20220719.0000.00_11.0_in_8b23edcd24.tgz">TGZ</kbd></a> <kbd class="tt" data-tt="8b23edcd24b0029009578488b5564e9b">MD5</kbd> <kbd>2.8G</kbd> </td>
+
+		<td>2022-07-26</td>
+		<td>F</td>
+		<td>V12.5.5.0.RJCINXM</td>
+		<td>11.0</td>
+		<td><kbd>ROM</kbd> <a href="https://bigota.d.miui.com/V12.5.5.0.RJCINXM/miui_LANCELOTINGlobal_V12.5.5.0.RJCINXM_b75857cc01_11.0.zip"><kbd class="tt" data-tt="miui_LANCELOTINGlobal_V12.5.5.0.RJCINXM_b75857cc01_11.0.zip">ZIP</kbd></a> <kbd class="tt" data-tt="b75857cc01f0db0a40fd7c6b42b5e2e9">MD5</kbd> <kbd>2.2G</kbd> <kbd class="tt" data-js='{"System":{"txt":["Updated Android Security Patch to June 2022. Increased system security."]}}'>LOG</kbd></td>
+
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Xiaomi Redmi 9</td>
+		<td>lancelot_global</td>
+		<td>global</td>
+
+		<td>2022-08-04</td>
+		<td>F</td>
+		<td>V12.5.6.0.RJCMIXM</td>
+		<td>11.0</td>
+		<td><kbd>FULLROM</kbd> <a href="https://bigota.d.miui.com/V12.5.6.0.RJCMIXM/lancelot_global_images_V12.5.6.0.RJCMIXM_20220720.0000.00_11.0_global_d547c61fa1.tgz"><kbd class="tt" data-tt="lancelot_global_images_V12.5.6.0.RJCMIXM_20220720.0000.00_11.0_global_d547c61fa1.tgz">TGZ</kbd></a> <kbd class="tt" data-tt="d547c61fa1e0de181db5952ebe853b53">MD5</kbd> <kbd>4.0G</kbd> </td>
+
+		<td>2022-07-26</td>
+		<td>F</td>
+		<td>V12.5.6.0.RJCMIXM</td>
+		<td>11.0</td>
+		<td><kbd>ROM</kbd> <a href="https://bigota.d.miui.com/V12.5.6.0.RJCMIXM/miui_LANCELOTGlobal_V12.5.6.0.RJCMIXM_725b167c13_11.0.zip"><kbd class="tt" data-tt="miui_LANCELOTGlobal_V12.5.6.0.RJCMIXM_725b167c13_11.0.zip">ZIP</kbd></a> <kbd class="tt" data-tt="725b167c136e5b556edf1261e0e1ef8a">MD5</kbd> <kbd>2.2G</kbd> <kbd class="tt" data-js='{"System":{"txt":["Updated Android Security Patch to June 2022. Increased system security."]}}'>LOG</kbd></td>
+
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
 	<tr>
 		<td>Redmi Note 10S</td>
 		<td>rosemary_ru_global</td>
@@ -11840,8 +11958,8 @@ $(function() {
 
 <pre>
 Author  : Sappurit
-Updated : 05-Aug-2022 17:00:43
-Total   : 400
+Updated : 05-Aug-2022 22:04:56
+Total   : 404
 </pre>
 </body>
 </html>

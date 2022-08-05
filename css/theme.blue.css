@@ -1,11 +1,10 @@
-/*************
-  Blue Theme
- *************/
+/**************/
+/* Blue Theme */
+/**************/
 /* overall */
 .tablesorter-blue {
 	width: 100%;
 	background-color: #fff;
-	margin: 10px 0 15px;
 	text-align: left;
 	border-spacing: 0;
 	border: #cdcdcd 1px solid;
@@ -20,57 +19,46 @@
 /* header */
 .tablesorter-blue th,
 .tablesorter-blue thead td {
-	font: 12px/18px Arial, Sans-serif;
 	font-weight: bold;
 	color: #000;
 	background-color: #99bfe6;
 	border-collapse: collapse;
-	padding: 4px;
-	text-shadow: 0 1px 0 rgba(204, 204, 204, 0.7);
+	vertical-align: top;
 }
 .tablesorter-blue tbody td,
 .tablesorter-blue tfoot th,
 .tablesorter-blue tfoot td {
-	padding: 4px;
 	vertical-align: top;
 }
 .tablesorter-blue .header,
 .tablesorter-blue .tablesorter-header {
-	/* black (unsorted) double arrow */
-	/* background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==); */
-	/* white (unsorted) double arrow */
-	/* background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAAP///////yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==); */
-	background-image: url(bootstrap-unsorted.png);
 	background-repeat: no-repeat;
 	background-position: center right;
-	padding: 4px 18px 4px 4px;
 	white-space: normal;
 	cursor: pointer;
+	/* black unsorted */	/* background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==); */
+	/* white unsorted */	/* background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAAP///////yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==); */
+	background-image: url(sort-none.png);				/*** SAPP ***/
 }
 .tablesorter-blue .headerSortUp,
 .tablesorter-blue .tablesorter-headerSortUp,
 .tablesorter-blue .tablesorter-headerAsc {
 	background-color: #9fbfdf;
-	/* black asc arrow */
-	/* background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7); */
-	/* white asc arrow */
-	/* background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAAP///////yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7); */
-	background-image: url(bootstrap-asc.png);
+	/* black asc arrow */	/* background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7); */
+	/* white asc arrow */	/* background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAAP///////yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7); */
+	background-image: url(sort-asc.png);				/*** SAPP ***/
 }
 .tablesorter-blue .headerSortDown,
 .tablesorter-blue .tablesorter-headerSortDown,
 .tablesorter-blue .tablesorter-headerDesc {
 	background-color: #8cb3d9;
-	/* black desc arrow */
-	/* background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7); */
-	/* white desc arrow */
-	/* background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAAP///////yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7); */
-	background-image: url(bootstrap-desc.png);
+	/* black desc arrow */	/* background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7); */
+	/* white desc arrow */	/* background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAAP///////yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7); */
+	background-image: url(sort-desc.png);				/*** SAPP ***/
 }
 .tablesorter-blue thead .sorter-false {
 	background-image: none;
 	cursor: default;
-	padding: 4px;
 }
 
 /* tfoot */
@@ -78,7 +66,6 @@
 .tablesorter-blue tfoot .tablesorter-headerSortDown,
 .tablesorter-blue tfoot .tablesorter-headerAsc,
 .tablesorter-blue tfoot .tablesorter-headerDesc {
-	/* remove sort arrows from footer */
 	background-image: none;
 }
 
@@ -86,12 +73,11 @@
 .tablesorter-blue td {
 	color: #3d3d3d;
 	background-color: #fff;
-	padding: 4px;
 	vertical-align: top;
 }
 
-/* hovered row colors */
-/* you'll need to add additional lines for rows with more than 2 child rows */
+/*
+/* hovered row colors */ /* you'll need to add additional lines for rows with more than 2 child rows */
 .tablesorter-blue tbody > tr.hover > td,
 .tablesorter-blue tbody > tr:hover > td,
 .tablesorter-blue tbody > tr:hover + tr.tablesorter-childRow > td,
@@ -100,14 +86,15 @@
 .tablesorter-blue tbody > tr.even:hover > td,
 .tablesorter-blue tbody > tr.even:hover + tr.tablesorter-childRow > td,
 .tablesorter-blue tbody > tr.even:hover + tr.tablesorter-childRow + tr.tablesorter-childRow > td {
-	/* background-color: #d9d9d9; */
+	/* background-color: #d9d9d9; */								/*** SAPP ***/
 }
 .tablesorter-blue tbody > tr.odd.hover > td,
 .tablesorter-blue tbody > tr.odd:hover > td,
 .tablesorter-blue tbody > tr.odd:hover + tr.tablesorter-childRow > td,
 .tablesorter-blue tbody > tr.odd:hover + tr.tablesorter-childRow + tr.tablesorter-childRow > td {
-	/* background-color: #bfbfbf; */
+	/* background-color: #bfbfbf; */								/*** SAPP ***/
 }
+*/
 
 /* table processing indicator */
 .tablesorter-blue .tablesorter-processing {
@@ -199,9 +186,10 @@
 	width: 98%;
 	height: auto;
 	margin: 0;
-	padding: 4px;
+	padding: 2px;							/*** SAPP ***/
 	background-color: #fff;
 	border: 1px solid #bbb;
+	font: inherit;
 	color: #333;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
